@@ -1,11 +1,13 @@
 <?php  include 'header.php'?>
 <?php  
-include '../funcFile/connect.php';
-$ayarsor=$db->prepare("SELECT *FROM  ecommerce  where settingID=:id");
-$ayarsor->execute(array(
-'id'=>0
-));
-$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
+
+  include '../funcFile/connect.php';
+  $ayarsor=$db->prepare("SELECT *FROM  ecommerce  where settingID=:id");
+  $ayarsor->execute(array(
+  'id'=>0
+  ));
+
+  $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 ?>      <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
@@ -57,46 +59,42 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
                   <div class="x_content">
                     <br />
                     <form  action="../funcFile/islem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-facebook"> </i><span class="required"></span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-at"> </i><span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="settingFacebook" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $ayarcek['settingFacebook']?>" >
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-twitter"> </i><span class="required"></span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-inbox"> </i><span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="settingTwitter" value="<?php echo $ayarcek['settingTwitter'] ?>" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-instagram"> </i><span class="required"></span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-male"> </i><span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="settingInstagram" value="<?php echo $ayarcek['settingInstagram'] ?>" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-linkedin"> </i><span class="required"></span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-envelope"> </i><span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="settingLinkedin" value="<?php echo $ayarcek['settingLinkedin'] ?>" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-github"> </i><span class="required"></span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"> <i class="fa fa-align-justify"> </i><span class="required"></span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="settingGitHub" value="<?php echo $ayarcek['settingGitHub'] ?>" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
                       <div class="form-group">
-                       
                         </div>
                       </div>
                       <div class="ln_solid"></div>
@@ -106,11 +104,10 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
                         </div>
                       </div>
                       </div>
-
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-
+            
             <?php  include 'footer.php'?>
