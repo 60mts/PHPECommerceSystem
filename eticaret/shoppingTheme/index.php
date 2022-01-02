@@ -23,7 +23,7 @@
                   <div class="col-lg-3 col-sm-6 col-md-3">
                      <a href="productpage.html">
                         <div class="box-img">
-                           <h4>Product</h4>
+                          <?php  ?> <h4>Product</h4>
                            <img src="images/product/4.png" alt="" />
                         </div>
                      </a>

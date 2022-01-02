@@ -1,7 +1,13 @@
 
 <!DOCTYPE html>
-<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php'?>
-<?php include_once '../gentelella-master/gentelella-master/funcFile/islem.php'?>
+<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php';
+$ayarsor=$db->prepare("SELECT *FROM ecommerce where settingID=:id");
+$ayarsor->execute(array(
+'id'=>0
+));
+$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);?>
+
+
 <html lang="en">
    <head>
       <meta charset="UTF-8">
@@ -36,7 +42,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
+                        <a href="index.php" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
