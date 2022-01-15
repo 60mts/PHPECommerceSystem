@@ -1,11 +1,12 @@
 <?php  
-include '../funcFile/connect.php';
+include_once '../funcFile/connect.php';
 $ayarsor=$db->prepare("SELECT *FROM ecommerce where settingID=:id");
 $ayarsor->execute(array(
 'id'=>1
 ));
 $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +16,7 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>60MTS ADMİN PANEL</title>
+    
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -68,6 +70,7 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
                       <li><a href="settingApi.php">Api Ayarlar</a></li>
                           <li><a href="socialSetting.php">Sosyal Ayarlar </a></li>
                           <li><a href="mailSetting.php">Mail Ayarlar </a></li>
+                          <li><a href="hakkimzdaSetting.php">Hakkımzda Ayarlar </a></li>
                     </ul>
                   </li>
               </div>

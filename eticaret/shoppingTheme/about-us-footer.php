@@ -10,13 +10,13 @@
                      </div>
                      <div class="col-md-6 col-sm-6">
                         <div class="form-box">
-                           <input type="text" placeholder="" />
-                           <button>DEVAM</button>
+                           <input type="text" placeholder="Enter yopur e-mail" />
+                           <button>Continue</button>
                         </div>
                      </div>
                      <div class="col-md-4 col-sm-12">
                         <div class="help-box-f">
-                           <h4> <?php echo $ayarcek['settingPhoneNumber'];?> </h4>
+                           <h4>Question? Call us on 12 34 56 78 for help</h4>
                            <p>Easy setup - no payment fees - up to 100 products for free</p>
                         </div>
                      </div>
@@ -45,7 +45,7 @@
                            <div class="col-sm-4">
                               <h2>COMPANY</h2>
                               <ul>
-                                 <li><a href="about-us.php">About chamb</a></li>
+                                 <li><a href="about-us.html">About chamb</a></li>
                                  <li><a href="#">Contact us</a></li>
                                  <li><a href="#">Press</a></li>
                                  <li><a href="#">Careers</a></li>
@@ -87,33 +87,28 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-8">
-                     <p><img width="90" src="images/logo.png" alt="#" style="margin-top: -5px;" /> All Rights Reserved. <?php  echo $ayarcek['settingAuthor']?>  © 2018</p>
+                     <p><img width="90" src="images/logo.png" alt="#" style="margin-top: -5px;" /> All Rights Reserved. Company Name © 2018</p>
                   </div>
                   <div class="col-md-4">
                      <ul class="list-inline socials">
                         <li>
-                           <a href="https://www.facebook.com/<?php echo $ayarcek['settingFacebook'] ?>"  target="_blank">
+                           <a href="">
                            <i class="fa fa-facebook" aria-hidden="true"></i>
                            </a>
                         </li>
                         <li>
-                        <a href="https://www.twitter.com/<?php echo $ayarcek['settingTwitter'] ?>"  target="_blank">
+                           <a href="">
                            <i class="fa fa-twitter" aria-hidden="true"></i>
                            </a>
                         </li>
                         <li>
-                        <a href="https://www.facebook.com/<?php echo $ayarcek['settingInstagram'] ?>"  target="_blank">
+                           <a href="">
                            <i class="fa fa-instagram" aria-hidden="true"></i>
                            </a>
                         </li>
                         <li>
-                        <a href="https://www.linkedin.com/<?php echo $ayarcek['settingLinkedin'] ?>"  target="_blank">
+                           <a href="#">
                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                        <li>
-                        <a href="https://www.github.com/<?php echo $ayarcek['settingGitHub'] ?>"  target="_blank">
-                           <i class="fa fa-github" aria-hidden="true"> </i>
                            </a>
                         </li>
                      </ul>
@@ -134,5 +129,3 @@
       <script src="js/wow.min.js"></script>
       <!--custom js--> 
       <script src="js/custom.js"></script>
-   </body>
-</html>

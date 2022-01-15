@@ -132,4 +132,70 @@ if(isset($_POST['genelSettingSave']))
             header("location:../production/mailSetting.php?durum=no");
             }
         }
+         if(isset($_POST['socialUpdateB']))
+    {
+        $ayarkaydet=$db->prepare("UPDATE ecommerce SET
+        
+        settingFacebook=:settingFacebook,
+        settingTwitter=:settingTwitter,
+        settingInstagram=:settingInstagram,
+        settingLinkedin=:settingLinkedin,
+        settingGitHub=:settingGitHub
+    
+    
+        WHERE settingID=0
+        ");
+        $update=$ayarkaydet->execute(array(
+            'settingFacebook'=>$_POST['settingFacebook'],
+            'settingTwitter'=>$_POST['settingTwitter'],
+            'settingInstagram'=>$_POST['settingInstagram'],
+            'settingLinkedin'=>$_POST['settingLinkedin'],
+            'settingGitHub'=>$_POST['settingGitHub']
+    
+        ));
+        if($update)
+        {
+            header("location:../production/mailSetting.php?durum=ok");
+        }
+            else{
+            header("location:../production/mailSetting.php?durum=no");
+            }
+        }
+        if(isset($_POST['hakkimgonder']))
+        {
+            $ayarkaydet=$db->prepare("UPDATE hakkimizda SET
+            
+            aboutBaslik=:aboutBaslik,
+            aboutID=:aboutID,
+            aboutDetail=:aboutDetail,
+            aboutImage=:aboutImage,
+            aboutCareerWorkBaslik=:aboutCareerWorkBaslik,
+            aboutWorkCareer=:aboutWorkCareer,
+            contactBaslik=:contactBaslik,
+            contactIcerk=:contactIcerk
+
+            WHERE aboutID=0
+            ");
+            $update=$ayarkaydet->execute(array(
+                'aboutBaslik'=>$_POST['aboutBaslik'],
+                'aboutDetail'=>$_POST['aboutDetail'],
+                'aboutImage'=>$_POST['aboutImage'],
+                'aboutCareerWorkBaslik'=>$_POST['aboutCareerWorkBaslik'],
+                'aboutWorkCareer'=>$_POST['aboutWorkCareer'],
+                'contactBaslik'=>$_POST['contactBaslik'],
+                'contactIcerk'=>$_POST['contactIcerk'],
+                
+        
+            ));
+            if($update)
+            {
+                header("location:../production/hakkimzdaSetting.php?durum=ok");
+            }
+                else{
+                header("location:../production/hakkimzdaSetting.php?durum=no");
+                }
+            }
+
+
+
 ?>

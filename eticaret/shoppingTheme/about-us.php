@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
    <head>
       <meta charset="UTF-8">
       <title>Chamb - Responsive E-commerce HTML5 Template</title>
@@ -75,7 +75,7 @@
          </nav>
       </header>
       <!-- Modal -->
-      <div class="modal fade lug" id="myModal" role="dialog">
+<div class="modal fade lug" id="myModal" role="dialog">
          <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -85,7 +85,7 @@
                </div>
                <div class="modal-body">
                   <ul>
-                     <li><a href="#"><img src="images/flag-up-1.png" alt="" /> United States</a></li>
+                     <li><a href="#"><img src=<?php echo $ayarcek['hakkim']?> alt="" /> United States</a></li>
                      <li><a href="#"><img src="images/flag-up-2.png" alt="" /> France </a></li>
                   </ul>
                </div>
@@ -373,5 +373,5 @@
       <script src="js/wow.min.js"></script>
       <!--custom js--> 
       <script src="js/custom.js"></script>
-   </body>
-</html>
+</body>
+</
