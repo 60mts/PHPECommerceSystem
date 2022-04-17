@@ -4,6 +4,7 @@
                   </div>
                </div>
                <div class="row clearfix">
+                  
                   <div class="col-lg-3 col-sm-6 col-md-3">
                      <a href="productpage.html">
                         <div class="box-img">

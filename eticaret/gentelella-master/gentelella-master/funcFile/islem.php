@@ -195,7 +195,4 @@ if(isset($_POST['genelSettingSave']))
                 header("location:../production/hakkimzdaSetting.php?durum=no");
                 }
             }
-
-
-
 ?>

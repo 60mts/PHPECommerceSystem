@@ -1,6 +1,15 @@
+
+
+<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php';
+$ayarsor=$db->prepare("SELECT *FROM hakkimizda where aboutID=:id");
+$ayarsor->execute(array(
+'id'=>1
+));
+$hakkimdacek=$ayarsor->fetch(PDO::FETCH_ASSOC);?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
+    
       <meta charset="UTF-8">
       <title>Chamb - Responsive E-commerce HTML5 Template</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">

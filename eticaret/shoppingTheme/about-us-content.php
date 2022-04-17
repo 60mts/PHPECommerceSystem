@@ -9,7 +9,7 @@
                </div>
                <div class="modal-body">
                   <ul>
-                     <li><a href="#"><img src=<?php echo ayarcek['hakki,m']?> alt="" /> United States</a></li>
+                     <li><a href="#"><img src="<?php echo ayarcek['hakkim']?>" /> United States</a></li>
                      <li><a href="#"><img src="images/flag-up-2.png" alt="" /> France </a></li>
                   </ul>
                </div>

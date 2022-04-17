@@ -24,7 +24,7 @@
     <script src="../build/js/custom.min.js"></script>
     <script>
       ClassicEditor
-        .create( document.querySelector( '#editor' ) )
+        .create( document.querySelector( '#aboutDetail' ) )
         .catch( error => {
             console.error( error );
         } );
