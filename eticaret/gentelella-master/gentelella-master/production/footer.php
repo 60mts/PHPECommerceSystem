@@ -1,7 +1,7 @@
 
   <footer>
           <div class="pull-right">
-            Muhammed Tayyib ŞAHİN <a href="https://60mts.com">60mts</a>
+            Muhammed Tayyib ŞAHİN <a href="">60mts</a>
           </div>
           <div class="clearfix"></div>
         </footer>

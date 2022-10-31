@@ -1,6 +1,87 @@
-<?php
-include "about-us-header.php";
-?>
+<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php';
+$ayarsor=$db->prepare("SELECT *FROM about where aboutID=:id");
+$ayarsor->execute(array(
+'id'=>1
+));
+$hakkimdacek=$ayarsor->fetch(PDO::FETCH_ASSOC);?>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    
+      <meta charset="UTF-8">
+      <title>Chamb - Responsive E-commerce HTML5 Template</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="css/animate-wow.css">
+      <!--main css-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="css/slick.min.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-12 left-rs">
+                     <div class="navbar-header">
+                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        </button>
+                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
+                     </div>
+                     <form class="navbar-form navbar-left web-sh">
+                        <div class="form">
+                           <input type="text" class="form-control" placeholder="Search for products or companies">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                     <div class="right-nav">
+                        <div class="login-sr">
+                           <div class="login-signup">
+                              <ul>
+                                 <li><a href="#">Login</a></li>
+                                 <li><a class="custom-b" href="#">Sign up</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="help-r hidden-xs">
+                           <div class="help-box">
+                              <ul>
+                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="images/flag.png" alt="" /> </a> </li>
+                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="nav-b hidden-xs">
+                           <div class="nav-box">
+                              <ul>
+                                 <li><a href="howitworks.html">How it works</a></li>
+                                 <li><a href="about-us.html">Chamb for Business</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.container-fluid --> 
+         </nav>
+      </header>
+      <!-- Modal -->
 <div class="modal fade lug" id="myModal" role="dialog">
          <div class="modal-dialog">
             <!-- Modal content-->
@@ -146,20 +227,16 @@ include "about-us-header.php";
                      <p>So what are you waiting for? Sign up and create oppurtinities for your business.</p>
                   </div>
                   <div class="col-lg-8 col-lg-offset-2">
-                     <div class="row">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                     <div class="row" align="center">
+                        <div class="col-sm-12 wow fadeIn" data-wow-delay="0.2s">
                            <div class="rectange">
-                              <h3 class="rectange_title">Career opportunities</h3>
-                              <p class="rectange_text">We’re growing, and we’re looking for talented people who can make commerce better.</p>
-                              <a href="" class="rectange_link">See open positions</a>
+                              <h3 class="rectange_title"> <?php echo $hakkimdacek['aboutCareerWorkBaslik']; ?></h3>
+                              <p class="rectange_text">
+                     <?php echo $hakkimdacek['contactBaslik']; ?>
+                              </p>
                            </div>
                         </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                           <div class="rectange">
-                              <h3 class="rectange_title">Contact us</h3>
-                              <p class="rectange_text">Have questions or any requests for us? Contact our team and we will get back to you.</p>
-                              <a href="" class="rectange_link">Contact Chamb</a>
-                           </div>
+                        
                         </div>
                      </div>
                   </div>
@@ -184,7 +261,7 @@ include "about-us-header.php";
                         </div>
                      </div>
                      <div class="col-md-4 col-sm-12">
-                        <div class="help-box-f">
+                        <div class="help-box-f ">
                            <h4>Question? Call us on 12 34 56 78 for help</h4>
                            <p>Easy setup - no payment fees - up to 100 products for free</p>
                         </div>

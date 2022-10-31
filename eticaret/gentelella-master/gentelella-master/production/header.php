@@ -1,11 +1,49 @@
-<?php  
-include_once '../funcFile/connect.php';
-$ayarsor=$db->prepare("SELECT *FROM ecommerce where settingID=:id");
-$ayarsor->execute(array(
-'id'=>1
-));
-$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
+        <?php  
+        include_once '../funcFile/connect.php';
+
+        $ayarsor=$db->prepare("SELECT *FROM ecommerce where settingID=:id");
+        $ayarsor->execute(array(
+        'id'=>0
+        ));
+
+        $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
+
+        session_start();
+        ob_start();
 ?>
+<?php
+          $usersor=$db->prepare("SELECT *FROM user where userName=:uname");
+                        
+                        $usersor->execute(array(
+                        'uname' => $_SESSION['userName']
+                      ));
+
+        $say=$usersor->rowCount();
+        $usercek=$usersor->fetch(PDO::FETCH_ASSOC);
+      if ($say==0) {
+  
+        header("location:../production/login?durum=izinsiz");
+        echo "izinsiz giriş";
+        exit;
+
+}
+
+
+if(!isset($_SESSION['userName']))
+
+{
+  header("Location:../production/login");
+}
+
+
+?>
+<?php
+
+$usersor=$db->prepare("SELECT * FROM user ");
+$usersor->execute();
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,17 +78,18 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span></span>
+            <h2><?php echo $_SESSION['userNameLastName'];?></h2></a>
             </div>
             <div class="clearfix"></div>
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <h2><?php echo $_SESSION['userName'];?></h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -60,17 +99,19 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="index.php"><i class="fa fa-home"></i> Anasayfa </a>
+                  <li><a href="index"><i class="fa fa-home"></i> Anasayfa </a>
+                  </li>
+                    <li><a href="userInfo"><i class="fa fa-user"></i> Kullanıcı İşlemleri </a>
                   </li>
                   <ul class="nav side-menu">
                   <li><a><i class="fa fa-cogs"></i> Site Ayarları <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="genel-settings.php">Genel ayarlar</a></li>
-                      <li><a href="iletisimSettings.php">  İletişim ayarları</a></li>
-                      <li><a href="settingApi.php">Api Ayarlar</a></li>
-                          <li><a href="socialSetting.php">Sosyal Ayarlar </a></li>
-                          <li><a href="mailSetting.php">Mail Ayarlar </a></li>
-                          <li><a href="hakkimzdaSetting.php">Hakkımzda Ayarlar </a></li>
+                      <li><a href="genel-settings">Genel ayarlar</a></li>
+                      <li><a href="iletisimSettings">  İletişim ayarları</a></li>
+                      <li><a href="settingApi">Api Ayarlar</a></li>
+                          <li><a href="socialSetting">Sosyal Ayarlar </a></li>
+                          <li><a href="mailSetting">Mail Ayarlar </a></li>
+                          <li><a href="hakkimzdaSetting">Hakkımzda Ayarlar </a></li>
                     </ul>
                   </li>
               </div>
@@ -104,19 +145,14 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt="">John Doe
+                    <img src="images/img.jpg" alt=""><?php echo $usercek['userNameLastName']; ?>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="javascript:;"> Profile</a></li>
-                    <li>
-                      <a href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a>
-                    </li>
+                  
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="logout"><i class="bi bi-escape"></i> Güvenli Çıkış </a></li>
                   </ul>
                 </li>
                 <li role="presentation" class="dropdown">

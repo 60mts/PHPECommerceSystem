@@ -5,7 +5,9 @@ $ayarsor=$db->prepare("SELECT *FROM  ecommerce  where settingID=:id");
 $ayarsor->execute(array(
 'id'=>0
 ));
+
 $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
+
 ?>      <!-- page content -->
         <div class="right_col" role="main">
           <div class="">

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php';
-$ayarsor=$db->prepare("SELECT *FROM ecommerce where settingID=:id");
+$ayarsor=$db->prepare("SELECT * FROM ecommerce where settingID=:id");
 $ayarsor->execute(array(
 'id'=>0
 ));

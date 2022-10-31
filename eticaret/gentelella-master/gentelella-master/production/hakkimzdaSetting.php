@@ -1,9 +1,9 @@
             <?php include 'header.php'; ?>
 
             <?php include '../funcFile/connect.php';
-$hakkimc = $db->prepare("SELECT *FROM hakkimizda where aboutID=:id");
+$hakkimc = $db->prepare("SELECT *FROM about where aboutID=:id");
 $hakkimc->execute(array(
-  'id' => 0,
+  'id' => 1,
 ));
 $hakkimsor = $hakkimc->fetch(PDO::FETCH_ASSOC); ?>
 

@@ -1,7 +1,6 @@
 
-
 <?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php';
-$ayarsor=$db->prepare("SELECT *FROM hakkimizda where aboutID=:id");
+$ayarsor=$db->prepare("SELECT *FROM about where aboutID=:id");
 $ayarsor->execute(array(
 'id'=>1
 ));
