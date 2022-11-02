@@ -117,7 +117,7 @@ $usersor->execute();
                           <li><a href="hakkimzdaSetting">Hakkımzda Ayarlar </a></li>
 
 
-                         
+
                     </ul>
                   </li>
               </div>
@@ -134,7 +134,7 @@ $usersor->execute();
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>

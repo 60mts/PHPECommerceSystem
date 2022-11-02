@@ -50,9 +50,8 @@ $usersor->execute();
     <td>
       <button class="btn btn-outline-inverse" style=""> <i class="fa fa-edit"></i> <a href="userEdit?userID=<?php echo $usercek['userID']; ?>">Düzenle</a> </button>  
       <a href="../funcFile/islem.php?userID=<?php echo $usercek['userID'];?>&userDelete=ok"><button class="btn btn-outline-inverse"> <i class="fa fa-trash"></i> Sil</button> </a>
-      <button class="btn btn-outline-inverse"> <i class="fa fa-photo"></i> Değiştir</button> 
-      <button class="btn btn-outline-inverse"> <i class="fa fa-edit"></i> Düzenle</button> 
-      <button class="btn btn-outline-inverse"> <i class="fa fa-edit"></i> Düzenle</button> </td>
+     
+      </td>
 
     </tr>
   
