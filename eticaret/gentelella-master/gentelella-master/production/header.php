@@ -103,15 +103,21 @@ $usersor->execute();
                   </li>
                     <li><a href="userInfo"><i class="fa fa-user"></i> Kullanıcı İşlemleri </a>
                   </li>
+                   </li>
+                    <li><a href="menuS"><i class="fa fa-list"></i> Menu İşlemleri </a>
+                  </li>
                   <ul class="nav side-menu">
                   <li><a><i class="fa fa-cogs"></i> Site Ayarları <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="genel-settings">Genel ayarlar</a></li>
-                      <li><a href="iletisimSettings">  İletişim ayarları</a></li>
+                      <li><a href="iletisimSettings">İletişim ayarları</a></li>
                       <li><a href="settingApi">Api Ayarlar</a></li>
                           <li><a href="socialSetting">Sosyal Ayarlar </a></li>
                           <li><a href="mailSetting">Mail Ayarlar </a></li>
                           <li><a href="hakkimzdaSetting">Hakkımzda Ayarlar </a></li>
+
+
+                         
                     </ul>
                   </li>
               </div>
