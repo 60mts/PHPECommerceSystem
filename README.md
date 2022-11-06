@@ -1,1 +1,1 @@
-PHP ile E Commerce Sites. Saf PHP ile binlerce satır ve emek verilerek yazılan bir sistem.. Kredi kartı entegrasyonuyla ödeme alınabilen bir sistem.
+Saf PHP ve çok emek sarf edilerek yazılan bir e-ticaret platformudur. Kredi Kartı entegrasyonu'da eklenecek yakında. Efsane bir app haline getireceğim.
