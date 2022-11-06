@@ -12,10 +12,11 @@
         ob_start();
 ?>
 <?php
-          $usersor=$db->prepare("SELECT *FROM user where userName=:uname");
+          $usersor=$db->prepare("SELECT *FROM user where userName=:uname;");
                         
                         $usersor->execute(array(
                         'uname' => $_SESSION['userName']
+                        
                       ));
 
         $say=$usersor->rowCount();
@@ -78,26 +79,39 @@ $usersor->execute();
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span></span>
+              <a href="index.php" class="site_title"><i class="fa fa-heart"></i>  <span>60e-MTS </span>
             <h2><?php echo $_SESSION['userNameLastName'];?></h2></a>
+            
             </div>
             <div class="clearfix"></div>
             <!-- menu profile quick info -->
-            <div class="profile clearfix">
+            <div class="profile clearfix" style="margin-left:80px;">
+              <div class="container text-center ">
               <div class="profile_pic">
-              <img src="">
+                <a href="profile">
+              <img class="img fluid"src="images/<?php echo $usercek['userPhoto']; ?>"width="60px"; style="user-select: none;">
+            </a>
+              <div class="profile_info" >
+                <br>
+                <a href="profile">
+                <button type="button" class="btn btn-light" style="border:none;font-size:10px; margin-left:-30px; margin-top:-25px;"><i class="fa fa-edit"></i> Profili Düzenle</button>
+                </a>
               </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2><?php echo $_SESSION['userName'];?></h2>
+                <span>Welcome</span>
+                <br>
+                <h2> <b> <?php echo $_SESSION['userName'];?><i class="fa fa-check" style="color:antiquewhite; font-size:10px;" title="Onaylı Hesap"></i></b>
+                </h2>
+               <h5 style="color:white;"> <b><?php echo $usercek['userUnvan']; ?> </b></h5> 
+            
               </div>
             </div>
+          </div>
             <!-- /menu profile quick info -->
             <br />
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+               
                 <ul class="nav side-menu">
                   <li><a href="index"><i class="fa fa-home"></i> Anasayfa </a>
                   </li>
@@ -125,13 +139,13 @@ $usersor->execute();
             <!-- /sidebar menu -->
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <a data-toggle="tooltip" data-placement="top" title="Settings" href="setting">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
               </a>
               <a data-toggle="tooltip" data-placement="top" title="FullScreen">
                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <a data-toggle="tooltip" data-placement="top" title="Lock" href="lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
               <a data-toggle="tooltip" data-placement="top" title="Logout" href="logout">
@@ -151,14 +165,17 @@ $usersor->execute();
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt=""><?php echo $usercek['userNameLastName']; ?>
+                    <img src="images/<?php echo $usercek['userPhoto'];?>" style="user-select: none;"alt=""><?php echo $usercek['userNameLastName']; ?>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
+                    <li><a href="Profile" >
+
+                        Profile   
+                    <i class="fa fa-face-smile"> </i></a></li>
                   
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="logout"><i class="bi bi-escape"></i> Güvenli Çıkış </a></li>
+                    <li><a href="Help">Help <i class="fa fa-question"> </i></a> </li>
+                    <li><a href="logout"> Güvenli Çıkış <i class="fa fa-person-to-door"></i> </a></li>
                   </ul>
                 </li>
                 <li role="presentation" class="dropdown">
