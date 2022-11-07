@@ -3,7 +3,7 @@
 
 
 
- <form action="../funcFile/islem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+ <form action="../funcFile/userUpdateIslem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
 
 

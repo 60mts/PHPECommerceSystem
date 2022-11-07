@@ -1,9 +1,9 @@
 <?php 
     include 'connect.php';
-    session_start();
-    ob_start();
+    
     include '../production/function.php';
-   
+   session_start();
+    ob_start();
 
         $usersor=$db->prepare("SELECT * FROM user where userName=:longName and userPhoto=:uphoto");
         $usersor->execute(array(
@@ -315,40 +315,41 @@
                 }
 
             }
-                        if (isset($_POST['menuUpdate'])) {
+                                
+ if (isset($_POST['menuUpdate'])) {
                          
-                         $menuID=$_POST['menuID'];
-                         
-                         $ayarkaydet=$db->prepare("UPDATE  menu SET 
-                              menuName=:menuName,
-                              menuSira=:menuSira,
-                              menuUrl=:menuUrl,
-                              menuDetail=:menuDetail,
-                              menuState=:menuState
-                              WHERE menuID={$_POST['menuID']}");
-                         }
-                         $update=$ayarkaydet->execute(array(
-                          'menuName'=>$_POST['menuName'],
-                          'menuSira'=> $_POST['menuSira'],
-                          'menuUrl'=>$_POST['menuUrl'],
-                          'menuDetail'=>$_POST['menuDetail'],
-                          'menuState'=>$_POST['menuState'],
-                          'menuSeoUrl'=>$menuSeoUrl
-          
-                         ));
-                     
-                          if ($update) {
-                              
-                              Header("Location:../production/menuEdit.php?menuID=$menuID&durum=ok");
-          
-          
-                              } else{
-                                  Header("Location:../production/menuEdit.php?menuID=$menuID&durum=no");
-          
-                          }
+    $menuID=$_POST['menuID'];
+
+$ayarkaydet=$db->prepare("UPDATE menu SET 
+     menuName=:menuName,
+     menuSira=:menuSira,
+     menuUrl=:menuUrl,
+     menuDetail=:menuDetail,
+     menuState=:menuState
+     where menuID={$_POST['menuID']}");
+
+$update=$ayarkaydet->execute(array(
+ 'menuName'=>$_POST['menuName'],
+ 'menuSira'=> $_POST['menuSira'],
+ 'menuUrl'=>$_POST['menuUrl'],
+ 'menuDetail'=>$_POST['menuDetail'],
+ 'menuState'=>$_POST['menuState'],
+
+
+));
+}
+ if ($update) {
+     
+     Header("Location:../production/menuEdit.php?menuID=$menuID&durum=ok");
+
+
+     } else{
+         Header("Location:../production/menuEdit.php?menuID=$menuID&durum=no");
+
+ }
                           if(isset($_POST['menuAdd']))
                           {
-                            $menuSeoUrl=seo($_POST['menuName']);
+                            $menuSeoUrl=seo('menuName');
 
                             $ayarkaydet=$db->prepare("INSERT INTO menu SET
 
@@ -359,12 +360,12 @@
                                         menuSira=:menuSira,
                                         menuState=:menuState"
                             );
-                            $insert=$ayarekle->execute(array(
+                            $insert=$ayarkaydet->execute(array(
 
                                 'menuName'=>$_POST['menuName'],
                                 'menuDetail'=> $_POST['menuDetail'],
                                 'menuUrl'=> $_POST['menuUrl'],
-                                'menuSeoUrl'=>$_POST['menuSeoUrl'],
+                                'menuSeoUrl'=>'menuSeoUrl',
                                 'menuSira'=> $_POST['menuSira'],
                                 'menuState'=>$_POST['menuState']
 
@@ -372,19 +373,52 @@
 
                             if($insert){
 
-                                header("location:../production/menuS.php?durum=ok");
+                                Header("Location:../production/menuS.php?durum=ok");
 
                             }
                             else {
 
-                                header("location:../production/menuS.php?durum=no");
+                                Header("Location:../production/menuS.php?durum=no");
                             }
 
 
                           }
+                                      
+                          if (isset($_POST['menuUpdate'])) {
+                         
+                            $menuID=$_POST['menuID'];
+                        
+                        $ayarkaydet=$db->prepare("UPDATE menu SET
+                           menuID=:menuID, 
+                             menuName=:menuName,
+                             menuSira=:menuSira,
+                             menuUrl=:menuUrl,
+                             menuDetail=:menuDetail,
+                             menuState=:menuState
+                             where menuID={$_POST['menuID']}");
+                        
+                        $update=$ayarkaydet->execute(array(
+                           'menuID'=>$_POST['menuID'],
+                         'menuName'=>$_POST['menuName'],
+                         'menuSira'=> $_POST['menuSira'],
+                         'menuUrl'=>$_POST['menuUrl'],
+                         'menuDetail'=>$_POST['menuDetail'],
+                         'menuState'=>$_POST['menuState'],
                         
                     
-            
+                        ));
+                    }
+                         if ($update) {
+                             
+                             Header("Location:../production/menuEdit.php?menuID=$menuID&durum=ok");
+                    
+                    
+                             } else{
+                                 Header("Location:../production/menuEdit.php?menuID=$menuID&durum=no");
+                    
+                         }
+   
+                        
   ?>
 
  

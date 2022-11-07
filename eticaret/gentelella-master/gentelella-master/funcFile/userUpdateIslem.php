@@ -1,35 +1,49 @@
-<?php
+<?php 
+ include 'connect.php';
+ session_start();
+ ob_start();
+ include '../production/function.php';
 
-   if (isset($_POST['menuSave'])) {
-                
-                $menuID=$_POST['menuID'];
-                
-                $ayarkaydet=$db->prepare("UPDATE  menu SET 
-                     menuName=:menuName,
-                     menuSira=:menuSira,
-                     menuUrl=:menuUrl,
-                     menuDetail=:menuDetail,
-                     menuState=:menuState
-                     WHERE menuID={$_POST['menuID']}");
-                }
-                $update=$ayarkaydet->execute(array(
-                 'menuName'=>$_POST['menuName'],
-                 'menuSira'=> $_POST['menuSira'],
-                 'menuUrl'=>$_POST['menuUrl'],
-                 'menuDetail'=>$_POST['menuDetail'],
-                 'menuState'=>$_POST['menuState'],
-                 'menuSeoUrl'=>$menuSeoUrl
- 
-                ));
-            
-                 if ($update) {
-                     
-                     Header("Location:../production/menuEdit.php?menuID=$menuID&durum=ok");
- 
- 
-                     } else{
-                         Header("Location:../production/menuEdit.php?menuID=$menuID&durum=no");
- 
-                 }
-               
-                 ?>
+
+
+$menucek=$menusor->fetch(PDO::FETCH_ASSOC);
+
+ if(isset($_POST['menuAdd']))
+ {
+   $menuSeoUrl=seo('menuName');
+
+   $update=$ayarkaydet=$db->prepare("INSERT INTO menu SET
+
+               menuName=:menuName,
+               menuDetail=:menuDetail,
+               menuUrl=:menuUrl,
+               menuSeoUrl=:menuSeoUrl,
+               menuSira=:menuSira,
+               menuState=:menuState"
+   );
+   $insert=$ayarkaydet->execute(array(
+
+       'menuName'=>$_POST['menuName'],
+       'menuDetail'=> $_POST['menuDetail'],
+       'menuUrl'=> $_POST['menuUrl'],
+       'menuSeoUrl'=>'menuSeoUrl',
+       'menuSira'=> $_POST['menuSira'],
+       'menuState'=>$_POST['menuState']
+
+   ));
+
+   if($insert){
+
+       Header("Location:../production/menuS.php?durum=ok");
+
+   }
+   else {
+
+       Header("Location:../production/menuS.php?durum=no");
+   }
+
+
+ }
+        
+
+            ?>

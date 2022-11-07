@@ -5,9 +5,10 @@ $ayarsor=$db->prepare("SELECT * FROM ecommerce where settingID=:id");
 $ayarsor->execute(array(
 'id'=>0
 ));
-$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);?>
+$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 
 
+?>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
@@ -63,16 +64,25 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);?>
                         <div class="help-r hidden-xs">
                            <div class="help-box">
                               <ul>
-                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="images/flag.png" alt="" /> </a> </li>
-                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
+                              
                               </ul>
                            </div>
                         </div>
                         <div class="nav-b hidden-xs">
                            <div class="nav-box">
                               <ul>
-                                 <li><a href="howitworks.html">How it works</a></li>
-                                 <li><a href="about-us.html">Chamb for Business</a></li>
+                           <?php    
+                           $menusor=$db->prepare("SELECT * FROM menu");
+                           $menusor->execute();
+                           
+                           
+                           while($ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC))  {?>
+
+                           <li><a href="<?php echo $ayarcek['menuLink']; ?>"><?php echo $ayarcek['menuName']; ?></a></li>
+
+
+
+                        <?php  }?>
                               </ul>
                            </div>
                         </div>
@@ -94,8 +104,7 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);?>
                </div>
                <div class="modal-body">
                   <ul>
-                     <li><a href="#"><img src="images/flag-up-1.png" alt="" /> United States</a></li>
-                     <li><a href="#"><img src="images/flag-up-2.png" alt="" /> France </a></li>
+                  li>
                   </ul>
                </div>
             </div>

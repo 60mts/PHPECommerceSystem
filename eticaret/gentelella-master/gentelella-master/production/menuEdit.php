@@ -14,7 +14,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
- <form action="../funcFile/islem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+ <form action="../funcFile/userUpdateIslem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
 
 
@@ -28,7 +28,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
             <div class="container">
             
           
-            <input type="text"  name="menuID"class="form-control-plaintext" id="staticEmail2" value="<?php echo $menucek['menuID']; ?>"  class="text-center">
+            <input type="text"  name="menuID"class="form-control-plaintext" id="staticEmail2" disabled value="<?php echo $menucek['menuID']; ?>"  class="text-center">
             
               
               <h5>MENU NAME</h5>
@@ -36,10 +36,10 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
                 <h5>MENU DETAİL</h5>
               <input type="text" name="menuDetail" value="<?php echo $menucek['menuDetail'];  ?>" required="">
               <h5>MENU SİRA</h5>
-              <input type="text" name="menuSira" value="<?php echo $menucek['menuSira']; ?>" required="" readonly>
+              <input type="text" name="menuSira" value="<?php echo $menucek['menuSira']; ?>" required="" >
               
               <h5>MENU URL</h5>
-              <input type="text" disabled name="menuUrl" value="<?php echo $menucek['menuUrl']; ?>" >
+              <input type="text"  name="menuUrl" value="<?php echo $menucek['menuUrl']; ?>" >
               <h5>MENU STATE</h5>
               <div class="container text-center d-flex items-align-center">
              <select  id="state" class="form-control" style="width:300px;" name="menuState" required>
@@ -52,7 +52,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
          </div>
        </div>
        <hr>
-  <button type="submit" class="btn btn-success" name="menuUpdate" > Update </button>
+  <button type="submit" formaction="../funcFile/islem.php" role="button"class="btn btn-success" name="menuUpdate" > Update </button>
 
     
             
