@@ -120,14 +120,12 @@
                            
                            
                            while($menucek=$menusor->fetch(PDO::FETCH_ASSOC))  {?>
-                               <ul class="nav navbar-nav collapse navbar-collapse">
-                           <li class="dropdown" > <a href="<?php echo $menucek['menuLink']; ?>"> <?php echo $menucek['menuName']; ?> <i class="fa fa-angle-down"></i></a></li>
-
-
+            
+                                <a href="<?php echo $menucek['menuLink']; ?>" >  <li role="menu" class="sub-menu"> <?php echo $menucek['menuName']; ?> </li></a>
 
                         <?php  }?>
 								
-                                    <ul role="menu" class="sub-menu">
+                                    <!--<ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
 										<li><a href="product-details.html">Product Details</a></li> 
 										<li><a href="checkout.html">Checkout</a></li> 
@@ -145,7 +143,7 @@
 								<li><a href="contact-us.html">Contact</a></li>
 							</ul>
 						</div>
-					</div>
+					</div>-->
 					<div class="col-sm-3">
 						<div class="search_box pull-right">
 							<input type="text" placeholder="Search"/>
