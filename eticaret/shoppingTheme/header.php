@@ -1,4 +1,4 @@
-<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,21 +116,22 @@
 								<li><a href="index.html" class="active">Home</a></li>
                                 
                                 <?php    
+                                 include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; 
+
                            $menusor=$db->prepare("SELECT * FROM menu");
                            $menusor->execute();
                            
                            
                            while($menucek=$menusor->fetch(PDO::FETCH_ASSOC))  {?>
             
-                                <a href="<?php echo $menucek['menuLink'];?>">
-                                <li role="menu" class="menu"> 
-                                   e <?php echo $menucek['menuName']; ?> 
-                                 </a>
-                                </li>
-                           
+                                <a href="<?php echo $menucek['menuLink'];?>" name="menulink">
+                                <li role="menu" class="menu" > 
+                                    <?php echo $menucek['menuName'];?>
+                                        </li>
+                            </a>
                         <?php  }?>
 								
-                                    <!--<ul role="menu" class="sub-menu">
+                                   <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
 										<li><a href="product-details.html">Product Details</a></li> 
 										<li><a href="checkout.html">Checkout</a></li> 
