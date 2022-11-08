@@ -13,6 +13,6 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
  
 #404 hata sayfası yönlendirme kodu
-ErrorDocument 404 http://www.60mts.com.tr
+#ErrorDocument 404 http://www.60mts.com.tr
  
  
