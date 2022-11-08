@@ -1,27 +1,4 @@
-<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; 
-
-          $usersor=$db->prepare("SELECT *FROM user where userName=:uname;");
-                        
-                        $usersor->execute(array(
-                        'uname' => $_SESSION['userName']
-                        
-                      ));
-
-        $say=$usersor->rowCount();
-        $usercek=$usersor->fetch(PDO::FETCH_ASSOC);
-      if ($say==0) {
-  
-        header("location:index.php?guest=yes");
-        
-    
-        
-        exit;
-
-}
-
-
-
-?>
+<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +58,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+							<a href="index.php"><img src="images/home/bestiburada.png" alt="" style="width:250px; user-select:none;" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -91,8 +68,8 @@
 						
 						</div>
 					</div>
-					
-								<li><a href="login.html"><i class="fa fa-lock"></i> Giriş Yap</a></li>
+					<ul>
+								<li><a href="login.php"><i class="fa fa-lock"></i> Giriş Yap</a></li>
 							</ul>
 						</div>
 					</div>
@@ -118,21 +95,7 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="index.html" class="active">Home</a></li>
                                 
-                                <?php    
-                                 include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; 
-
-                           $menusor=$db->prepare("SELECT * FROM menu");
-                           $menusor->execute();
-                           
-                           
-                           while($menucek=$menusor->fetch(PDO::FETCH_ASSOC))  {?>
-            
-                         
-                                <a href="<?php  echo $menucek['menuLink'];?>">  <li role="menu" class="menu"></a> 
-                                    <?php echo $menucek['menuName'];?>
-                                        </li>
-                            
-                        <?php  }?>
+                    
 								
                                    <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>

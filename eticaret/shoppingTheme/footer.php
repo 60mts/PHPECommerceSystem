@@ -4,8 +4,8 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+							<h2><img src="images/home/alt.png" style="width:200px; user-select: none;"></h2>
+							<p>BEST eTicaretLOJİSTİK TİCARET MAKİNA SANAYİ ANONİM ŞİRKETİ </p>
 						</div>
 					</div>
 					<div class="col-sm-7">
@@ -149,7 +149,8 @@
 			<div class="container">
 				<div class="row">
 					<p class="pull-left">Copyright © 2022 60mts e-Ticaret Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <b> 60mts </b> </p>
+					<p class="pull-right">Designed by <a href="http://www.60mts.com.tr" target="_blank"> <img src="images/home/alt-imza.png" style="user-select:none; width:150px;" title="60MTS DİJİTAL WEB DESİGN">
+                </a></p>
 				</div>
 			</div>
 		</div>
