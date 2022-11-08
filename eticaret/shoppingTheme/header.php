@@ -1,4 +1,27 @@
+<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; 
 
+          $usersor=$db->prepare("SELECT *FROM user where userName=:uname;");
+                        
+                        $usersor->execute(array(
+                        'uname' => $_SESSION['userName']
+                        
+                      ));
+
+        $say=$usersor->rowCount();
+        $usercek=$usersor->fetch(PDO::FETCH_ASSOC);
+      if ($say==0) {
+  
+        header("location:index.php?guest=yes");
+        
+    
+        
+        exit;
+
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,13 +91,7 @@
 						
 						</div>
 					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-user"></i> Hesabım</a></li>
-								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Sepetim</a></li>
+					
 								<li><a href="login.html"><i class="fa fa-lock"></i> Giriş Yap</a></li>
 							</ul>
 						</div>
@@ -111,10 +128,10 @@
                            while($menucek=$menusor->fetch(PDO::FETCH_ASSOC))  {?>
             
                          
-                                <a href="<?php echo $menucek['menuLink'];?>">  <li role="menu" class="menu" > 
+                                <a href="<?php  echo $menucek['menuLink'];?>">  <li role="menu" class="menu"></a> 
                                     <?php echo $menucek['menuName'];?>
                                         </li>
-                            </a>
+                            
                         <?php  }?>
 								
                                    <ul role="menu" class="sub-menu">
