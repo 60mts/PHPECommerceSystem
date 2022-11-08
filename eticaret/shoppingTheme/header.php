@@ -114,6 +114,7 @@
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="index.html" class="active">Home</a></li>
+                                
                                 <?php    
                            $menusor=$db->prepare("SELECT * FROM menu");
                            $menusor->execute();
@@ -121,8 +122,12 @@
                            
                            while($menucek=$menusor->fetch(PDO::FETCH_ASSOC))  {?>
             
-                                <a href="<?php echo $menucek['menuLink']; ?>" >  <li role="menu" class="sub-menu"> <?php echo $menucek['menuName']; ?> </li></a>
-
+                                <a href="<?php echo $menucek['menuLink'];?>">
+                                <li role="menu" class="menu"> 
+                                   e <?php echo $menucek['menuName']; ?> 
+                                 </a>
+                                </li>
+                           
                         <?php  }?>
 								
                                     <!--<ul role="menu" class="sub-menu">
