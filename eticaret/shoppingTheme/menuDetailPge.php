@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
-	<?php include '../funcFile/connect.php';?>
-	<?php
+	<?php include '../funcFile/connect.php';
     $menusor=$db->prepare("SELECT * FROM menu");
     $menucek=$menusor->execute();
     
