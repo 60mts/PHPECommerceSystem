@@ -32,7 +32,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
             
               
               <h5>MENU NAME</h5>
-              <input type="text" name="menuName" value="<?php echo $menucek['menuName'];?>" required="">
+              <input type="text" name="menuName" value="menu-<?php echo $menucek['menuName'];?>" required="">
                 <h5>MENU DETAİL</h5>
               <input type="text" name="menuDetail" value="<?php echo $menucek['menuDetail'];  ?>" required="">
               <h5>MENU SİRA</h5>

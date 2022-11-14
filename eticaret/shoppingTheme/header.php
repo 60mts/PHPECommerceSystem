@@ -6,6 +6,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href="index.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">

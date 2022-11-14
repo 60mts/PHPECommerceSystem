@@ -1,5 +1,6 @@
 <?php include 'header.php'; ?>
 	<?php include '../funcFile/connect.php';
+
     $menusor=$db->prepare("SELECT * FROM menu");
     $menucek=$menusor->execute();
     
@@ -20,9 +21,7 @@
 
             <div class="menuDetail">
 
-    <h3> <?php echo $menucek['menuName'];?></h3>
-
-            </div>
+        </div>
     </div>
 	
 	<?php include 'footer.php';?>

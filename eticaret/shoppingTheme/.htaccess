@@ -15,5 +15,5 @@ RewriteRule ^(.*)$ $1.php
 #404 hata sayfası yönlendirme kodu
 #ErrorDocument 404 http://www.60mts.com.tr
 
-RewriteRule ^sayfa-([0-9a-zA-Z-_]+) menuDetail.php?sef=$1[L,QSA]
+RewriteRule ^menu-([0-9a-zA-Z-_]+) menuDetailPge.php?sef=$1[L,QSA]
  
