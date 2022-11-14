@@ -38,9 +38,9 @@ include '../gentelella-master/gentelella-master/production/function.php';
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> 0537 580 2268</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> mts@60mts.com.tr</a></li>
-							</ul>
+								<!--<li><a href="#"><i class="fa fa-phone"></i> </a></li>-->
+								<li><a href="#"><i class="fa fa-envelope"></i> musteritemsilcisi@60mts.com.tr </a></li>
+</ul>
 						</div>
 					</div>
 					<div class="col-sm-6">
