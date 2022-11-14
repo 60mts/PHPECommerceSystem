@@ -5,7 +5,19 @@
 					<div class="col-sm-2">
 						<div class="companyinfo">
 							<h2><img src="images/home/alt.png" style="width:200px; user-select: none;"></h2>
-							<p>BEST eTicaretLOJİSTİK TİCARET MAKİNA SANAYİ ANONİM ŞİRKETİ </p>
+						
+						</div>
+						<div class="container d-flex" style=""> 
+							
+								<img src="images/home/30gu1n.png" style="width:200px; margin-left:150px;">
+								<img src="images/home/guzelpa.png" style="width:200px; margin-left:150px;">
+							<img src="images/home/hizlikargo.png" style=" width:200px; margin-left:150px;">
+						
+								
+							
+							
+							</div>
+							
 						</div>
 					</div>
 					<!--<div class="col-sm-7">
@@ -132,12 +144,13 @@
 					</div>
 					<div class="col-sm-3 col-sm-offset-1">
 						<div class="single-widget">
-							<h2>About Shopper</h2>
+							<h2>Gelişmelerden haberdar ol</h2>
 							<form action="#" class="searchform">
-								<input type="text" placeholder="Your email address" />
+								<input type="text" placeholder="e-mail" />
 								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
 								<p>Get the most recent updates from <br />our site and be updated your self...</p>
 							</form>
+							<img src="images/home/b-pay.png" style="width:200px; user-select:none;">
 						</div>
 					</div>
 					
@@ -148,7 +161,8 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2022 60mts e-Ticaret Inc. All rights reserved.</p>
+					
+					<p class="pull-left">Copyright © 2022 <b>BEST TİCARET MAKİNA SANAYİ ANONİM ŞİRKETİ </b>
 					<p class="pull-right">Designed by <a href="http://www.60mts.com.tr" target="_blank"> <img src="images/home/alt-imza.png" style="user-select:none; width:150px;" title="60MTS DİJİTAL WEB DESİGN">
                 </a></p>
 				</div>

@@ -1,4 +1,8 @@
-<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php'; ?>
+<?php include_once '../gentelella-master/gentelella-master/funcFile/connect.php';
+
+include '../gentelella-master/gentelella-master/production/function.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,15 +37,15 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> </a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> mt@60mts.com.tr</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> 0537 580 2268</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> mts@60mts.com.tr</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="<?php echo $ayarcek['settingFacebook'] ?>"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
@@ -95,32 +99,39 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.php" class="active">Anasayfa</a></li>
+
+								<?php  $menusor=$db->prepare("SELECT * FROM menu where menuState=:durum order by menuSira ASC limit 5");
+									$menusor->execute(array(
+										'durum' => 1
+
+									));
+									while ($menucek=$menusor->fetch(PDO::FETCH_ASSOC)) {
+										?>
+										
+											<li><a href="
+											<?php
+											if(!empty($menucek['menuUrl'])){
+
+												echo $menucek['menuUrl'];
+
+											}
+											else{
+
+												echo "sayfa-".seo($menucek['menuName']);
+											}
+											
+												?>
+											
+											"><?php echo $menucek['menuName']; ?> </li></a>
                                 
-                    
-								
-                                   <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.php">Products</a></li>
-										<li><a href="product-details.php">Product Details</a></li> 
-										<li><a href="checkout.php">Checkout</a></li> 
-										<li><a href="cart.php">Cart</a></li> 
-										<li><a href="login.php">Login</a></li> 
-                                    </ul>
-                                </li> 
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.php">Blog List</a></li>
-										<li><a href="blog-single.php">Blog Single</a></li>
-                                    </ul>
-                                </li> 
-								<li><a href="404.php">404</a></li>
-								<li><a href="contact-us.php">Contact</a></li>
+									<?php } ?>
+							
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
+							<input type="text" placeholder="Ara"/>
 						</div>
 					</div>
 				</div>
