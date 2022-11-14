@@ -3,6 +3,7 @@
     $menusor=$db->prepare("SELECT * FROM menu");
     $menucek=$menusor->execute();
     
+    $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
     
     ?>
 	
