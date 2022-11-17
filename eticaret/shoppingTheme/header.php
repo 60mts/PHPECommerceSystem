@@ -11,7 +11,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>besti burada !</title>
+    <title> .::BB::. BESTi BURADA</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -73,10 +73,13 @@ include '../gentelella-master/gentelella-master/production/function.php';
 						
 						</div>
 					</div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" style="margin-top:20px; color:white;">
 						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="login.php"><i class="fa fa-lock"></i> Giriş Yap</a></li>
+						<ul class="nav navbar-nav  d-flex" >
+								<button type="buton" class="btn btn-outline-dark"style="margin-left:-100px; color:white;"> <a href="cart" style="color:orange;"><i class="fa fa-cart-plus fa-3x"></i><b>  </b></a></button>
+							</ul>
+							<ul class="nav navbar-nav d-flex">
+								<button type="button" class="btn btn-outline-dark"  style="color:gray; "> <a href="login" style="color:orange;"><i class="fa fa-lock fa-3x"></i> <b>    </b></a></button>
 							</ul>
 						</div>
 					</div>
@@ -98,7 +101,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<div class="mainmenu pull-left">
+						<div class="mainmenu pull-left" style="margin-top:20px;">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 
 								<?php  $menusor=$db->prepare("SELECT * FROM menu where menuState=:durum order by menuSira ASC limit 5");
@@ -109,7 +112,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 									while ($menucek=$menusor->fetch(PDO::FETCH_ASSOC)) {
 										?>
 										
-											<li><a href="
+											<li> <b><a href="
 											<?php
 											if(!empty($menucek['menuUrl'])){
 
@@ -123,14 +126,15 @@ include '../gentelella-master/gentelella-master/production/function.php';
 											
 												?>
 											
-											"><?php echo $menucek['menuName']; ?> </li></a>
+											"><?php echo $menucek['menuName']; ?> </li></a></b>
                                 
 									<?php } ?>
 							
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-sm-3" style="margin-top:15px;">
 						<div class="search_box pull-right">
 							<input type="text" placeholder="Ara"/>
 						</div>
@@ -139,3 +143,4 @@ include '../gentelella-master/gentelella-master/production/function.php';
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
+	

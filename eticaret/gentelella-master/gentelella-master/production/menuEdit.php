@@ -52,7 +52,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
          </div>
        </div>
        <hr>
-  <button type="submit" formaction="../funcFile/islem.php" role="button"class="btn btn-success" name="menuUpdate" > Update </button>
+                  <button type="submit" formaction="../funcFile/islem.php" role="button"class="btn btn-success" name="menuUpdate" > Update </button>
 
     
             
