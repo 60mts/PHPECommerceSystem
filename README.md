@@ -8,5 +8,6 @@ Saf PHP kullanarak yapıldı. Kredi kartı entegrasyonlu &SEO menu oluşurmalı 
 -> ADMİN PANELİ
 -> USER ADDED PANEL
 -> MENU PANELİ
-
 -> IYZICO ÖDEME API 
+
+  --> DAHA EKLENECEK BİR ÇOK DETAY OLUCAK.
