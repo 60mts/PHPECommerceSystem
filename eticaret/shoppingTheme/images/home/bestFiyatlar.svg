@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 8.73px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #f39200;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5, .cls-6, .cls-2, .cls-7 {
+        font-family: Anton-Regular, Anton;
+      }
+
+      .cls-2 {
+        font-size: 2.63px;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8, .cls-9, .cls-10 {
+        font-family: AlbasSans-Regular, 'Albas Sans';
+      }
+
+      .cls-11 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="54.42" y="18.52" width="38.9" height="12.75" rx="6.37" ry="6.37"/>
+  <g>
+    <line class="cls-11" x1="73.92" y1="24.89" x2="88.06" y2="24.89"/>
+    <path class="cls-1" d="M81.23,29.69c-.15-.23-.08-.54,.15-.69l6.45-4.11-6.45-4.11c-.23-.15-.3-.46-.15-.69,.15-.23,.46-.3,.69-.15l7.11,4.53c.14,.09,.23,.25,.23,.42s-.09,.33-.23,.42l-7.11,4.53c-.08,.05-.18,.08-.27,.08-.17,0-.33-.08-.42-.23Z"/>
+  </g>
+  <text class="cls-3" transform="translate(5.65 28.39)"><tspan class="cls-9" x="0" y="0">BE</tspan><tspan class="cls-10" x="6.57" y="0">S</tspan><tspan class="cls-8" x="9.78" y="0">T</tspan><tspan class="cls-6" x="13.24" y="0" xml:space="preserve"> Fİ</tspan><tspan class="cls-5" x="20.75" y="0">Y</tspan><tspan class="cls-7" x="24.44" y="0">A</tspan><tspan class="cls-6" x="28.57" y="0">TLAR</tspan></text>
+  <text class="cls-2" transform="translate(67.26 26.37)"><tspan x="0" y="0">TÜMÜ</tspan></text>
+</svg>

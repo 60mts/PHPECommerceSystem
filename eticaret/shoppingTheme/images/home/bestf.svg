@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 137.86">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3, .cls-4, .cls-2, .cls-5 {
+        font-family: Anton-Regular, Anton;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #f39200;
+      }
+
+      .cls-8 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-8, .cls-9 {
+        font-family: AlbasSans-Regular, 'Albas Sans';
+      }
+
+      .cls-2 {
+        font-size: 8px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        font-size: 26.53px;
+      }
+
+      .cls-10 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" x="232.99" y="52.68" width="118.21" height="38.73" rx="19.36" ry="19.36"/>
+  <g>
+    <line class="cls-10" x1="292.24" y1="72.05" x2="335.61" y2="72.05"/>
+    <polygon class="cls-1" points="325.67 84.32 323.63 82.12 334.46 72.05 323.63 61.98 325.67 59.78 338.87 72.05 325.67 84.32"/>
+  </g>
+  <text class="cls-7" transform="translate(84.79 82.68)"><tspan class="cls-9" x="0" y="0">BE</tspan><tspan class="cls-8" x="19.98" y="0">S</tspan><tspan class="cls-9" x="29.72" y="0">T</tspan><tspan class="cls-4" x="40.24" y="0" xml:space="preserve"> Fİ</tspan><tspan class="cls-5" x="63.06" y="0">Y</tspan><tspan class="cls-3" x="74.28" y="0">A</tspan><tspan class="cls-4" x="86.82" y="0">TLAR</tspan></text>
+  <text class="cls-2" transform="translate(259.22 76.53)"><tspan x="0" y="0">TÜMÜ</tspan></text>
+</svg>

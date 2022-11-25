@@ -1,32 +1,37 @@
 <?php include 'header.php'; ?>
 	
-	<section id="slider"><!--slider-->
-		<div class="container">
+	<section id="slider" style="background-image:url('images/home/slider.svg');  background-repeat: no-repeat; background-size:cover, 40%; background-position:center;  height:660px;  background-clip: content-box;">
+		
+	<!--slider-->
+	<div class="container" style="padding:80px;">
+
+		<div class="container" style="width:100%;  ">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-12" style="border-radius:50px;color:white;">
+					
 					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
+						<ol class="carousel-indicators" style="margin-top:150px;">
 							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#slider-carousel" data-slide-to="1"></li>
 							<li data-target="#slider-carousel" data-slide-to="2"></li>
 						</ol>
 						
-						<div class="carousel-inner">
-							<div class="item active">
+						<div class="carousel-inner " >
+							<div class="item active" >
 								<div class="col-sm-6">
-									<h1><img src="images/home/bestiburada.png" style="width:150px;"></h1>
-									<h2>Herşeyin "BEST-i" burada !</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
+									<h1><img src="images/home/alt.png" style="width:150px; user-select:none;"></h1>
+									<h2 style="color:white">Herşeyin "BEST-i" burada !</h2>
+									<p style="color:white"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<button type="button" class="btn btn-dark" style="width:200px; padding:20px;">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
+									<img src="images/home/grl.png" class="girl img-responsive" alt="" />
 									<img src="images/home/indirim.png"  class="pricing" alt="" />
 								</div>
 							</div>
 							<div class="item">
 								<div class="col-sm-6">
-								<h1><img src="images/home/bestiburada.png" style="width:150px;"></h1>
+								<h1><img src="images/home/alt.png" style="width:150px; user-select:none;"></h1>
 									<h2>100% Responsive Design</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
@@ -39,7 +44,7 @@
 							
 							<div class="item">
 								<div class="col-sm-6">
-								<h1><img src="images/home/bestiburada.png" style="width:150px;"></h1>
+								<h1><img src="images/home/alt.png" style="width:150px; user-select:none;"></h1>
 									<h2>Free Ecommerce Template</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
@@ -53,25 +58,68 @@
 						</div>
 						
 						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
+						<i class="bi bi-arrow-left" style=" margin-left:-150px;"></i>
 						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next" >
+						<i class="bi bi-arrow-right" style="margin-right:-450px;"></i>
 						</a>
 					</div>
 					
 				</div>
 			</div>
 		</div>
+</div>
 	</section><!--/slider-->
 	
+	<div class="Kampanyalar">
+	<div class="container " >
+		<div class="row">
+				<div class="col-sm-3" style="width:250px; height:400px;">
+					<img src="images/home/kampanyalar.svg" style="user-select:none;">
+</div>
+					<div class="col-sm-3" style="width:250px; height:400px;">
+					<img src="images/home/kampanyalar.svg" style="user-select:none;">
+</div>
+					<div class="col-sm-3" style="width:250px; height:400px;">
+					<img src="images/home/kampanyalar.svg" style="user-select:none;">
+</div>
+</div>
+					
+</div>
+</div>
+<div class="en-iyi-fiyatlar">
+	<div class="container">
+		<div class="row">
+			<div class="col-">
+				<img src="images/home/bestfiyat.svg" style="width:150px; user-select:none;">
+		</div>
+
+				<section class="col-lg-2">
+					<a href="#" class="d-flex align-item-center">
+				<button type="button" class="" style="padding:20px; width:200px; border-radius:100px; border:none; background-color:#F39200; color:white; margin-top:0">TÜMÜ <i class="bi bi-arrow-right me-3"></i></button></a>
+</section>
+			
+</div></div>
+</div>
+
+</div>
+</div>
+
+<div class=" container text-center items-center" style="width:100%; height:600px; background-color:gray; color:orange; margin-top:10px;"> 
+
+
+
+		<h5> Burası Best fiyatların alanıdır. </h5>
+		<img src="images/home/best-fiyat-icerik.svg" style="width:450px; height:350px; float:left;">
+
+</div>
 	<section>
-		<div class="container">
+		<div class="container" style="margin-top:100px;">
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="left-sidebar">
+					<!--<div class="left-sidebar">
 						<h2>Category</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-products-->
+						<div class="panel-group category-products d-flex" id="">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -176,9 +224,9 @@
 									<h4 class="panel-title"><a href="#">Shoes</a></h4>
 								</div>
 							</div>
-						</div><!--/category-products-->
+						</div>category-products
 					
-						<div class="brands_products"><!--brands_products-->
+						<div class="brands_products">
 							<h2>Brands</h2>
 							<div class="brands-name">
 								<ul class="nav nav-pills nav-stacked">
@@ -191,24 +239,22 @@
 									<li><a href="#"> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
 								</ul>
 							</div>
-						</div><!--/brands_products-->
-						
-						<div class="price-range"><!--price-range-->
+						</div>
+						-->
+						<!--<div class="price-range">
 							<h2>Price Range</h2>
 							<div class="well text-center">
 								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
 								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
 							</div>
-						</div><!--/price-range-->
+						</div>/price-range-->
 						
-						<div class="shipping text-center"><!--shipping-->
-							<img src="images/home/shipping.jpg" alt="" />
-						</div><!--/shipping-->
+					
 					
 					</div>
 				</div>
-				
-				<div class="col-sm-9 padding-right">
+			
+				<div class="col-sm-9 padding-right" style="border-radius:30px; background-color:#EF9A53; color:black;">
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Features Items</h2>
 						<div class="col-sm-4">

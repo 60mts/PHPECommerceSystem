@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442.6 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f39200;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #b2b2b2;
+      }
+
+      .cls-3 {
+        font-family: Rhantica-Serif, Rhantica;
+        font-size: 21.12px;
+        letter-spacing: .12em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        font-family: Anton-Regular, Anton;
+        font-size: 24.2px;
+      }
+
+      .cls-4 {
+        font-family: RIVERFLOWS-Regular, RIVERFLOWS;
+        font-size: 19.61px;
+        letter-spacing: .12em;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M358.91,68.81c7.65,0,13.86,6.2,13.86,13.86V499.77c0,6.88-6.1,12.47-13.62,12.47H57.82c-7.52,0-13.62-5.58-13.62-12.47V84.66c0-8.76,7.1-15.85,15.85-15.85h44.45c7.47,0,13.53,5.54,13.53,12.38v14.97c0,7.86,7.03,14.29,15.62,14.29h146.8c8.59,0,15.62-6.43,15.62-14.29v-14.06c0-7.34,6.5-13.29,14.52-13.29h48.33Z"/>
+  <g>
+    <g>
+      <polygon class="cls-2" points="215.18 82.71 215.48 84.09 214.02 83.45 212.58 84.12 212.83 82.73 211.71 81.82 213.24 81.6 213.96 80.29 214.73 81.58 216.28 81.76 215.18 82.71"/>
+      <text class="cls-4" transform="translate(158.44 99.55) scale(.92 1)"><tspan x="0" y="0">BESt-i</tspan></text>
+    </g>
+    <text class="cls-3" transform="translate(221.86 96.88) scale(1.09 1)"><tspan x="0" y="0">BURADA</tspan></text>
+    <g>
+      <path class="cls-2" d="M153.75,93.15c.07,2.79-1.19,4.89-3.06,6.24l-3.43-.38-2.03-3.43-1.92,3.48-3.98,.55c-1.62-1.11-2.81-2.82-3.13-5.15-.04-.32-.07-.65-.07-.98v-11.61c0-2.11,3.37-2.21,3.45-.1,.03,.78,0,1.59-.04,2.36-.06,1.15,1.13,2,2.27,1.61,5.25-1.74,12.05,1.66,11.92,7.4Z"/>
+      <polygon class="cls-2" points="146.99 101.86 147.4 103.78 145.37 102.89 143.35 103.84 143.71 101.89 142.14 100.62 144.28 100.32 145.28 98.5 146.36 100.29 148.51 100.54 146.99 101.86"/>
+    </g>
+  </g>
+  <path class="cls-1" d="M112.14,113.96h187.16c15.9,0,28.81,12.91,28.81,28.81h0c0,16.04-13.02,29.06-29.06,29.06H112.14c-15.9,0-28.81-12.91-28.81-28.81v-.26c0-15.9,12.91-28.81,28.81-28.81Z"/>
+  <text class="cls-7" transform="translate(158.55 152.62)"><tspan x="0" y="0">BEST Fİ</tspan><tspan class="cls-6" x="63.08" y="0">Y</tspan><tspan class="cls-5" x="73.32" y="0">A</tspan><tspan x="84.75" y="0">T!</tspan></text>
+</svg>

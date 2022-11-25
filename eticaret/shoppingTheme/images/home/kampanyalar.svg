@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #f39200;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #b2b2b2;
+      }
+
+      .cls-4 {
+        font-family: RIVERFLOWS-Regular, RIVERFLOWS;
+        font-size: 36.22px;
+        letter-spacing: .12em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-family: Rhantica-Serif, Rhantica;
+        font-size: 39.01px;
+        letter-spacing: .12em;
+      }
+
+      .cls-7 {
+        fill: #f6f6f6;
+        font-family: Anton-Regular, Anton;
+        font-size: 34.81px;
+      }
+
+      .cls-8 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M561.97,13.37c13.36,0,24.2,11.46,24.2,25.6V809.54c0,12.72-10.65,23.03-23.79,23.03H36.22c-13.14,0-23.79-10.31-23.79-23.03V42.66c0-16.18,12.39-29.29,27.68-29.29H117.72c13.04,0,23.62,10.24,23.62,22.86v27.66c0,14.52,12.27,26.4,27.27,26.4H424.95c15,0,27.27-11.88,27.27-26.4v-25.98c0-13.56,11.36-24.55,25.36-24.55h84.39Z"/>
+  <g>
+    <g>
+      <polygon class="cls-3" points="310.99 39.05 311.5 41.59 308.95 40.42 306.43 41.67 306.88 39.09 304.92 37.4 307.59 37.01 308.85 34.59 310.2 36.97 312.9 37.29 310.99 39.05"/>
+      <text class="cls-4" transform="translate(211.91 70.16) scale(.87 1)"><tspan x="0" y="0">BESt-i</tspan></text>
+    </g>
+    <text class="cls-5" transform="translate(322.65 65.23) scale(1.03 1)"><tspan x="0" y="0">BURADA</tspan></text>
+    <g>
+      <path class="cls-3" d="M203.72,58.34c.12,5.16-2.08,9.04-5.34,11.52l-5.98-.7-3.54-6.34-3.34,6.43-6.95,1.02c-2.83-2.05-4.91-5.21-5.47-9.51-.08-.59-.12-1.2-.12-1.82v-21.44c0-3.9,5.88-4.08,6.02-.18,.05,1.45,0,2.94-.06,4.36-.1,2.12,1.97,3.69,3.97,2.98,9.16-3.21,21.04,3.07,20.81,13.67Z"/>
+      <polygon class="cls-3" points="191.91 74.43 192.62 77.98 189.07 76.34 185.56 78.08 186.18 74.49 183.45 72.14 187.18 71.59 188.93 68.22 190.8 71.54 194.57 71.99 191.91 74.43"/>
+    </g>
+  </g>
+  <path class="cls-8" d="M107.67,685.11H490.91c12.19,0,22.09,9.9,22.09,22.09v62.48c0,12.33-10.01,22.34-22.34,22.34H107.67c-12.19,0-22.09-9.9-22.09-22.09v-62.73c0-12.19,9.9-22.09,22.09-22.09Z"/>
+  <text class="cls-7" transform="translate(158.88 756.38) scale(.89 1)"><tspan x="0" y="0">MAĞAZ</tspan><tspan class="cls-6" x="90.91" y="0">A</tspan><tspan x="106.99" y="0">YI Zİ</tspan><tspan class="cls-1" x="160.73" y="0">Y</tspan><tspan x="175.44" y="0">ARET ET !</tspan></text>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2063.69 795.06">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-family: Anton-Regular, Anton;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        fill: #f39200;
+        font-size: 324.79px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-family: AristaProTrial-Light, 'Arista Pro Trial';
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(114.55 514.63)"><tspan class="cls-5" x="0" y="0">BEST </tspan><tspan class="cls-1" x="736.96" y="0">Fİ</tspan><tspan class="cls-3" x="940.11" y="0">Y</tspan><tspan class="cls-2" x="1077.45" y="0">A</tspan><tspan class="cls-1" x="1230.96" y="0">TLAR</tspan></text>
+</svg>

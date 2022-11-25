@@ -1,102 +1,39 @@
-<footer id="footer"><!--Footer-->
-		<div class="footer-top">
+<footer id="" style="background-color:#EFF5F5; padding:50px;"><!--Footer-->
+		<div class="footer">
+			
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
-						<div class="companyinfo">
+						<div class="companyinfo" style="padding-bottom:20px;">
 							<h2><img src="images/home/alt.png" style="width:200px; user-select: none;"></h2>
 						
 						</div>
 						<div class="container d-flex" style=""> 
 							
-								<img src="images/home/30gu1n.png" style="width:200px; margin-left:150px;">
-								<img src="images/home/guzelpa.png" style="width:200px; margin-left:150px;">
-							<img src="images/home/hizlikargo.png" style=" width:200px; margin-left:150px;">
+								<img src="images/home/30.png" style="width:200px; margin-left:150px;">
+								<img src="images/home/guzl.png" style="width:200px; margin-left:150px;">
+							<img src="images/home/fast.png" style=" width:200px; margin-left:150px;">
 						
 								
-							
+							<HR>
 							
 							</div>
 							
 						</div>
 					</div>
-					<!--<div class="col-sm-7">
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-					</div>-->
-					<!--<div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>60mts Plaza </p>
-						</div>-->
+					
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="footer-widget">
+		<div id="foot" style="font-family: 'Josefin Sans', sans-serif; background-color:#BCEAD5; padding:50px; border-radius:100px; margin-top:50px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
-						<div class="single-widget">
+						<div class="footHead">
 							<h2>Service</h2>
+							<hr>
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="#">Online Help</a></li>
 								<li><a href="#">Contact Us</a></li>
@@ -106,21 +43,23 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Quock Shop</h2>
+					<div class="col-sm-3">
+						<div class="footHead">
+							<h2>BB<i class="bi bi-arrow-through-heart-fill"></i>NETWORK</h2>
+							<hr style="">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">T-Shirt</a></li>
-								<li><a href="#">Mens</a></li>
-								<li><a href="#">Womens</a></li>
-								<li><a href="#">Gift Cards</a></li>
-								<li><a href="#">Shoes</a></li>
+								<li><a href="#">Best Kitap</a></li>
+								<li><a href="#">Best-i Burada 2.el</a></li>
+								<li><a href="#">Best TV</a></li>
+								<li><a href="#">Best Kariyer</a></li>
+								<li><a href="#"></a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-2">
-						<div class="single-widget">
+						<div class="">
 							<h2>Policies</h2>
+							<hr>
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="#">Terms of Use</a></li>
 								<li><a href="#">Privecy Policy</a></li>
@@ -130,27 +69,23 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
+					<div class="col-sm-4">
+						<div class="">
+							<h2>Best-i Burada</h2>
+							<hr>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Company Information</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Store Location</a></li>
+								<li><a href="#">Şirketimiz hakkında</a></li>
+								<li><a href="#">Kariyer</a></li>
+								<li><a href="#">Şirket yerleşkemiz</a></li>
 								<li><a href="#">Affillate Program</a></li>
-								<li><a href="#">Copyright</a></li>
+								<li><a href="#">Telif Hakkı</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<div class="single-widget">
-							<h2>Gelişmelerden haberdar ol</h2>
-							<form action="#" class="searchform">
-								<input type="text" placeholder="e-mail" />
-								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
-								<p>Get the most recent updates from <br />our site and be updated your self...</p>
-							</form>
-							<img src="images/home/b-pay.png" style="width:200px; user-select:none;">
+
+					
+					</div>
+							<!--<img src="images/home/bestpay.png" style="width:350px; user-select:none;">-->
 						</div>
 					</div>
 					
@@ -158,13 +93,22 @@
 			</div>
 		</div>
 		
-		<div class="footer-bottom">
+		<div class="footer-bottom" style="background-color:#EFF5F5;margin-top:50px;">
 			<div class="container">
-				<div class="row">
+				<div class="row" align="center" ">
 					
-					<p class="pull-left">Copyright © 2022 <b>BEST TİCARET MAKİNA SANAYİ ANONİM ŞİRKETİ </b>
-					<p class="pull-right">Designed by <a href="http://www.60mts.com.tr" target="_blank"> <img src="images/home/alt-imza.png" style="user-select:none; width:150px;" title="60MTS DİJİTAL WEB DESİGN">
+					<p class="pull-left">Copyright © 2022 <b><img src="images/home/alt.png" style="width:150px; user-select:none;"></b>
+					<p class="pull-right"> <a href="http://www.60mts.com.tr" target="_blank"> <img src="images/home/alt-imza1.png" style="user-select:none; width:150px;" title="60MTS DİJİTAL WEB DESİGN">
                 </a></p>
+
+				<div>
+					<img src="images/home/iyzico.svg" style="width:150px;">
+					<img src="images/home/3d.png" style="width:20px;">
+					
+
+
+
+				</div>
 				</div>
 			</div>
 		</div>
