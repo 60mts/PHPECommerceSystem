@@ -11,3 +11,5 @@ Saf PHP kullanarak yapıldı. Kredi kartı entegrasyonlu &SEO menu oluşurmalı 
 -> IYZICO ÖDEME API 
 
   --> DAHA EKLENECEK BİR ÇOK DETAY OLUCAK.
+  
+YAKINDA OOP VE LARAVEL MVC İLE KODLANMIŞ OLAN PROJE'DE HERKESE AÇIK HALE GELECEKTİR.
