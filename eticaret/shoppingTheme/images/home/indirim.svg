@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.74 138.63">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: FranklinGothic-Heavy, 'Franklin Gothic Heavy';
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #e94e1b;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #f39200;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        fill: #f39200;
+      }
+    </style>
+  </defs>
+  <circle class="cls-5" cx="87.38" cy="65.39" r="31.81"/>
+  <circle class="cls-4" cx="87.38" cy="65.39" r="41.62"/>
+  <text class="cls-1" transform="translate(48.8 72.48)"><tspan x="0" y="0">İNDİRİM</tspan></text>
+  <g>
+    <polygon class="cls-3" points="91.46 83.14 92.52 88.05 88.63 86.31 88.63 80.26 86.14 80.26 86.14 86.5 82.63 88.24 83.47 83.29 79.39 79.88 84.9 79.06 87.26 74.52 89.84 78.96 95.38 79.57 91.46 83.14"/>
+    <path class="cls-2" d="M91.14,90.9l-2.51,2.33-.86,.79-.89,.83-.76-.7-.78-.71-2.54-2.34c-.47-.44-.47-1.15,0-1.58,.25-.23,.55-.33,.86-.33s.62,.11,.86,.32l1.63,1.5v-4.5l1.38-.69,1.11,.5v4.07l.97-.89c.21-.21,.49-.3,.77-.3s.56,.09,.77,.3c.42,.38,.42,1.01,0,1.41Z"/>
+  </g>
+</svg>

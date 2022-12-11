@@ -7,10 +7,3 @@
     margin:0;
     padding:0;
 }
-
-#container >.footHead > h2{
-    display: flexbox;
-    color:white;
-
- 
-}

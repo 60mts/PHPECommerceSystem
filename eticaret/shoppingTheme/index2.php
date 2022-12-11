@@ -40,7 +40,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 </head><!--/head-->
 
 <body>
-	<header id="header"  style="position:static;"><!--header-->
+	<header id="header" ><!--header-->
 		<div class="header_top" style="background-color:#EFF5F5;"><!--header_top-->
 			<div class="container" >
 				<div class="row" >
@@ -48,7 +48,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<!--<li><a href="#"><i class="fa fa-phone"></i> </a></li>-->
-								<li><a href="mailto:musteritemsilcis@bestiburada.online"><i class="fa fa-envelope"></i> musteritemsilcisi@bestiburada.online </a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> musteritemsilcisi@60mts.com.tr </a></li>
 </ul>
 						</div>
 					</div>
@@ -66,137 +66,54 @@ include '../gentelella-master/gentelella-master/production/function.php';
 				</div>
 			</div>
 		</div><!--/header_top-->
-		<!--<div style="width:100%; display:block; float:left; text-decoration:none; list-style-type:none; overflow:hidden; margin:0; padding:20px;">
-			<ul style="">
-				<li style="float:left; display:block;">
-						Siparişlerim
-				</li>
-				<li style="float:left; display:block;">
-					Best Fiyat, Best Teklif
-				</li style="float:left;">
-				<li>
-					Best Yurt Dışından
-				</li>
-				<li style="float:left; display:block;">
-					Kampanyalar
-				</li>
-				<li style="float:left; display:block;">
-					Çözüm merkezi
-				</li>
-				<li style="float:left; display:block;">
-					BEST Premium
-				</li>
-				<li style="float:left; display:block;">
-					BEST Satıcı ol
-				</li>
-			</ul>
-</div>-->
-	
-	<div class="header-center" style="padding:50px; width:100%; background-color:#D6E4E5;  ">
-<div class="img-fluid">
-	<img src="images/home/alt.png" align="right" width="150" style="user-select:none;">
-	
-	
-	<button class="btn btn-outline-success hidden-xs" type="button" style="500px; padding:20px; float:right; margin-top:-30px; margin-right:20px;"> <i class="bi bi-geo-alt-fill"></i> KONUM <br>
-		<p style="font-size:10px;">Konum Seç <i class=" bi bi-arrow-down-short"></i></p> 
-
-</button>
-	
-	<div id="buttons"> 
-
-	<button type="button" class="btn btn-outline-success " style="padding:10px; text-align:center; border:3px solid gray; color:gray;"><i class="bi bi-person-fill "></i><b>Giriş Yap</b>
-
-	
-		<p style="font-size:8px;">veya üye ol </p>
-
-
-
-
-	</button>
-	<!--<a href="cart" style="color:white; text-decoration:none;">-->
-	<button type="button" class="btn btn-dark" style="padding:20px; border:3px solid gray; background-color:gray; color:white;"><i class="bi bi-basket"></i> <b>Sepetim </b> </button> 
-</div>
-	<div class="" style="">
-
-
-	
-
-</div>
-</div>
-<div class="" align="center">
-	<input type="center" placeholder="Ne lazımsa ara.." style="padding:20px; border-radius:3px; border:2px solid orange; outline:none; width:350px;"><button type="button" style="background-color:transparent; border:none; margin-left:-40px;"> <i class="bi bi-search"></i></button>
-</div>
-
-
-</div>
-
-
-
-                    <!--<div class="col-sm-2" style="" color:white;">
-						<div class="shop-menu pull-right">
+		
+		<div class="header-middle "><!--header-middle-->
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-4 ">
+						<div class="logo pull-left">
+							<a href="index"><img src="images/home/alt.png" alt="" style="width:250px; user-select:none;" /></a>
+						</div>
+						
+						
+						</div>
+					</div>
+                    <div class="col-sm-3 hidd" style=" color:white;">
+						<div class="shop-menu pull-right " >
 						
 						<ul class="nav navbar-nav" >
-								<button type="button" class=""style="margin-left:-60px; color:white;"> <a href="cart" style="color:orange;"><i class="bi bi-bag-fill ms-3 fs-22" style="font-size:30px;padding:10px "></i>
+								<button type="button" class="btn btn-outline"style="margin-left:-200px; color:white;"> <a href="cart" style="color:orange;"><i class="bi bi-bag-fill ms-3 fs-22" style="font-size:30px;padding:10px "></i>
 							
-							<h4 style="float:right;"></h4><br>
+							<h4 style="float:right;">Sepetim</h4><br>
 						
 							
-							<div class="col-sm-6">
 							</a></button>
 							</ul>
-							<ul class="nav navbar-nav">
-								<button type="button" class=""  style="color:gray;border:none; background-color:#000000; "> <a href="login" style="color:orange;"><i class="bi bi-file-lock2" style="font-size:30px;"></i> <b>    </b></a></button>
+							<ul class="nav navbar-nav  ">
+								<button type="button" class="btn btn-dark"  style="color:gray; "> <a href="login" style="color:orange;"><i class="bi bi-file-lock2" style="font-size:30px;"></i> <b>    </b></a></button>
 							</ul>
 						</div>
-</div>
 					</div>
 				</div>
 			</div>
-		</div>/header-middle-->
-	
-		<div class="header-bottom" style="background-color:#EEEEEE; color:white; text-align:center"><!--header-bottom-->
+		</div><!--/header-middle-->
+		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9" style="">
+					<div class="col">
 
 
-						<div class="navbar-header" style="">
+						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Responsive Menu</span>
+								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<div class="mainmenu pull-left" style="margin-top:20px; ">
-							<ul class="nav navbar-nav collapse navbar-collapse " >
-								
-							<?php  $menusor=$db->prepare("SELECT * FROM menu where menuState=:durum order by menuSira ASC limit 5");
-									$menusor->execute(array(
-										'durum' => 1
+						<div class="mainmenu pull-left" style="">
+							<ul class="nav navbar-nav collapse navbar-collapse">
 
-									));
-									while ($menucek=$menusor->fetch(PDO::FETCH_ASSOC)) {
-										?>
-										
-											<li> <b><a href="
-											<?php
-											if(!empty($menucek['menuUrl'])){
-
-												echo $menucek['menuUrl'];
-
-											}
-											else{
-
-												echo "sayfa-".seo($menucek['menuName']);
-											}
-											
-												?>
-											
-											"><?php echo $menucek['menuName']; ?> </b></li></a>
-                                
-									<?php } ?>
-							
 								
 							</ul>
 						</div>
@@ -209,14 +126,14 @@ include '../gentelella-master/gentelella-master/production/function.php';
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 	
-	<section id="slider" style="background-color:transparent; border:5px solid #F39200; border-radius:30px; background-repeat: no-repeat;  background-position:center; color:orange; height:700px;  ">
+	<section id="slider" style="background-image:url('images/home/slider.svg');  background-repeat: no-repeat; background-size:cover, 40%; background-position:center;  height:660px;  background-clip: content-box;">
 		
 	<!--slider-->
-	<div class="container " style="border-radius:30px; margin-top:30px;">
+	<div class="container md-center" style="padding:75px;">
 
 		<div class="container" style="width:100%;  ">
 			<div class="row">
-				<div class="col-md-12 md-center"  style="border-radius:30px;color:orange; padding:75px;">
+				<div class="col-sm-12" style="border-radius:50px;color:white;">
 					
 					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators" style="padding-top:150px;">
@@ -229,8 +146,8 @@ include '../gentelella-master/gentelella-master/production/function.php';
 							<div class="item active" >
 								<div class="col-sm-6">
 									<h1><img src="images/home/alt.png" style="width:150px; user-select:none;"></h1>
-									<h2>Herşeyin "BEST-i" burada !</h2>
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h2 style="color:white">Herşeyin "BEST-i" burada !</h2>
+									<p style="color:white"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-dark" style="width:200px; padding:20px;">Get it now</button>
 								</div>
 								<div class="col-sm-6 m-10">
@@ -267,7 +184,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 						</div>
 						
 						<a href="#slider-carousel" class="left control-carousel" data-slide="prev">
-						<i class="bi bi-arrow-left" style="margin-left:-80px;"></i>
+						<i class="bi bi-arrow-left" style=" margin-left:-150px;"></i>
 						</a>
 						<a href="#slider-carousel" class="right control-carousel " data-slide="next" >
 						<i class="bi bi-arrow-right" style="margin-right:-450px;"></i>
@@ -282,56 +199,57 @@ include '../gentelella-master/gentelella-master/production/function.php';
 
 			</div>
 		<div class="BestFirsatlar">
-	<div class="container-fluid " style="" >
-		<div class="row" style="padding:50px">
-		<div class="col-sm-12 col-lg-2 center" style=" margin-left:35px;">
+	<div class="container" style="" >
+		<div class="row" style="">
+		<div class="col-sm-12 col-lg-3 col-md-4" style="width:250px; height:550px; margin-left:-100px;">
 				<section><b>KAÇMAZ BU FIRSAT!</b>NATRO ... </section>
-					<img src="images/home/bestComp.png" style="user-select:none;">
+					<img src="images/home/bestComp.svg" style="user-select:none;">
 					
 			</div>
-			<div class="col-sm-2 col-md-12 col-lg-2" style=" margin-left:30px;">1
-			<img src="images/home/besttt.png" style=""></div>
-			<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">3 
-			<img src="images/home/besttt.png" style=""></div>
-			<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">4 
-			<img src="images/home/besttt.png" style=""></div>
-			<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">5
-			<img src="images/home/besttt.png" style=""></div>
+			<div class="col-sm-2" style="width:250px; height:550px;">2
+			<img src="images/home/bestMsi.svg" style="user-select:none;"></div>
+			<div class="col-xs-2" style="width:250px; height:550px;">3 
+			<img src="images/home/bestComp.svg" style="user-select:none;"></div>
+			<div class="col-xs-2" style="width:250px; height:550px;">4 
+			<img src="images/home/bestComp.svg" style="user-select:none;"></div>
+			<div class="col-xs-2" style="width:250px; height:550px;">5
+			<img src="images/home/bestComp.svg" style="user-select:none;"></div>
 			
 	
 </div>
 </div>		
 </div>
-
 	<div class="Kampanyalar">
-	<div class="container-fluid" >
-		<div class="row" style="padding:50px;;">
-				<div class="col-md-12 col-lg-2" style="margin-left:30px;">
+	<div class="container md-center text-center hidden-sm" >
+		<div class="row" style="float:left; margin-left:-100px;">
+				<div class="col-sm-12 col-lg-2 md-center d-flex justify-content-center" style="width:250px; height:550px;">
 				<section><b>KAÇMAZ BU FIRSAT!</b>NATRO ... </section>
-					<img src="images/home/bestttKasim.png" style="">
+					<img src="images/home/bestKasim.svg" style="">
 					
 </div>
-					<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">
+					<div class="col-sm-12 col-lg-2 md-center" style="width:250px; height:550px;">
 					<section> PUMA KOLEKSİYONLAR! </section>
-					<img src="images/home/bestttKasim.png" style="">
+					<img src="images/home/bestMsi.svg" style="">
 
 </div>
-					<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">
+					<div class="col-sm-12 col-lg-2 md-center" style="width:250px; height:550px;">
 					<section> PUMA KOLEKSİYONLAR! </section>
-					<img src="images/home/bestttKasim.png" style="">
+					<img src="images/home/bestPayUst.svg" style="">
 </div>
-<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">
+<div class="col-sm-12 col-lg-2 md-center" style="width:250px; height:550px;">
 <section> PUMA KOLEKSİYONLAR! </section>
-					<img src="images/home/bestttKasim.png" style="">
-</div>
-<div class="col-sm-2 col-md-12 col-lg-2" style="margin-left:30px;">
-<section> PUMA KOLEKSİYONLAR! </section>
-					<img src="images/home/bestttKasim.png" style="">
+					<img src="images/home/besPuma.svg" style="">
 </div>
 
-</div>							
 </div>
+<div class="col-sm-12 col-lg-2 md-center hidden-xs" style="width:250px; height:550px; ">
+<section> PUMA KOLEKSİYONLAR! </section>
+					<img src="images/home/besPuma.svg" style="">
 </div>
+					<hr>
+					
+</div>
+		
 
 </div>
 <hr>
@@ -346,7 +264,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 
 <section style="">
 
-	<img src="images/home/bestPremium.png" width="150">
+	<img src="images/home/altKisim.svg" width="150">
 
 
 </section>
@@ -355,14 +273,14 @@ include '../gentelella-master/gentelella-master/production/function.php';
 <div class=" col-sm-12 col-lg-2 md-center" style=" width:128px; height:80px; color:white;margin-left:50px;">
 
 
-<img src="images/home/bestPremium.png" width="150">
+<img src="images/home/altKisim.svg" width="150">
 
 <h5 class="">Besti Premium'u Keşfet</h5>
 </div>
 <div class="col-sm-12 col-lg-2 md-center" style=" width:128px; height:80px; color:white; margin-left:50px; ">
 
 
-<img src="images/home/bestPremium.png" width="150">
+<img src="images/home/altKisim.svg" width="150">
 
 
 </section>
@@ -372,7 +290,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 
 <section style="">
 
-<img src="images/home/bestPremium.png" width="150">
+<img src="images/home/altKisim.svg" width="150">
 
 </section>
 <h5 class="">Besti Premium'u Keşfet</h5>
@@ -380,7 +298,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 <div class="col-sm-12 col-lg-2 md-center "  style=" width:128px; height:80px; color:white;margin-left:50px; ">
 
 <section style="">
-<img src="images/home/bestPremium.png" width="150">
+<img src="images/home/altKisim.svg" width="150">
 
 
 </section>
@@ -389,7 +307,8 @@ include '../gentelella-master/gentelella-master/production/function.php';
 <div class="col-sm-12 col-lg-2 md-center mx-5" style=" width:128px; height:80px; color:white; margin-left:50px; ">
 
 <section style="">
-<img src="images/home/bestPremium.png" width="150">
+
+<img src="images/home/altKisim.svg" width="150">
 
 </section>
 <h5 class="">Besti Premium'u Keşfet</h5>
@@ -559,10 +478,10 @@ include '../gentelella-master/gentelella-master/production/function.php';
 								</div>
 							</div>
 							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-								<i class="bi bi-arrow-left" style="border-radius:50px; font-size:10px;"></i>
+								<i class="bi bi-arrow-left" style="border-radius:50px;"></i>
 							  </a>
 							  <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-								<i class="bi bi-arrow-right" style="border-radius:50px; font-size:10px;"></i>
+								<i class="bi bi-arrow-right" style="border-radius:50px;"></i>
 							  </a>			
 						</div>
 					</div>

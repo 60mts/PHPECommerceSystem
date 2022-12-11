@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.31 472.18">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Poppins-Regular, Poppins;
+        font-size: 12px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #1d1d1b;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        font-size: 72.7px;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: Anton-Regular, Anton;
+      }
+
+      .cls-3 {
+        font-family: Rhantica-Serif, Rhantica;
+        font-size: 32.04px;
+        letter-spacing: .12em;
+      }
+
+      .cls-8 {
+        fill: #dadada;
+      }
+
+      .cls-4 {
+        font-size: 49.19px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-family: RIVERFLOWS-Regular, RIVERFLOWS;
+        font-size: 29.75px;
+        letter-spacing: .12em;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-8" x="2.16" width="266.15" height="472.18"/>
+    <g>
+      <g>
+        <polygon class="cls-6" points="150.42 19.54 150.86 21.64 148.67 20.67 146.5 21.7 146.88 19.58 145.19 18.19 147.5 17.87 148.58 15.89 149.74 17.84 152.07 18.1 150.42 19.54"/>
+        <text class="cls-5" transform="translate(65.17 45.1) scale(.91 1)"><tspan x="0" y="0">BESt-i</tspan></text>
+      </g>
+      <text class="cls-3" transform="translate(160.46 41.05) scale(1.08 1)"><tspan x="0" y="0">BURADA</tspan></text>
+      <g>
+        <path class="cls-6" d="M58.12,35.39c.1,4.24-1.79,7.42-4.6,9.46l-5.15-.58-3.04-5.2-2.88,5.28-5.98,.84c-2.44-1.68-4.22-4.28-4.71-7.81-.07-.48-.1-.99-.1-1.49V11.42c5.39-.28,5.35,5.53,5.13,10.29-.09,1.74,1.7,3.03,3.42,2.45,7.88-2.64,18.11,2.52,17.91,11.23Z"/>
+        <polygon class="cls-6" points="47.95 48.6 48.57 51.51 45.52 50.17 42.5 51.6 43.02 48.66 40.68 46.72 43.88 46.27 45.4 43.5 47.01 46.23 50.25 46.6 47.95 48.6"/>
+      </g>
+    </g>
+  </g>
+  <text class="cls-4" transform="translate(58.12 219.45) scale(1.11 1)"><tspan x="0" y="0">BEST</tspan></text>
+  <text class="cls-2" transform="translate(102.36 286)"><tspan class="cls-7" x="0" y="0">P</tspan><tspan class="cls-9" x="33.26" y="0">A</tspan><tspan x="66.84" y="0">Y</tspan></text>
+  <text class="cls-1" transform="translate(74.6 316.29)"><tspan x="0" y="0">ÖDEME YAYPMANIN </tspan><tspan x="0" y="14.4">BEST VE KOLAY YOLU</tspan></text>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.56 172.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ededed;
+        stroke: #e30613;
+        stroke-dasharray: 0 12;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-3 {
+        fill: #878787;
+      }
+
+      .cls-4 {
+        font-family: Acknowledgement, Acknowledgement;
+        font-size: 6px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #1d1d1b;
+      }
+
+      .cls-6 {
+        fill: #c6c6c6;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="84.96" cy="80.78" r="62.43"/>
+  <text class="cls-4" transform="translate(73.95 116.87)"><tspan x="0" y="0">HIZLI </tspan><tspan x="-8.28" y="7.2">TESLiM</tspan><tspan class="cls-2" x="23.17" y="7.2">A</tspan><tspan x="28.5" y="7.2">T</tspan></text>
+  <g>
+    <polygon class="cls-3" points="83.35 97.72 53.35 82.14 52.23 45.7 83.35 51.36 83.35 97.72"/>
+    <polygon class="cls-6" points="121.5 87.74 84.72 98.72 84.72 51.99 121.5 47.14 121.5 87.74"/>
+    <polygon class="cls-5" points="84.21 50.13 54.1 44.83 86.39 38.38 120.99 45.28 84.21 50.13"/>
+  </g>
+</svg>

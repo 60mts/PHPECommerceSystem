@@ -8,13 +8,29 @@
 							<h2><img src="images/home/alt.png" style="width:200px; user-select: none;"></h2>
 						
 						</div>
-						<div class="container d-flex" style=""> 
+						<div class="container md-center align-items-center" style=""> 
+<!--							
+							<div class="footer center">
+								<div class="container md-center text-center">
+									<div class="row">
+										<div class="col">							<img src="images/home/guvenliAlisveris.svg" width="200px;">
+									</div>	
+									<div class="col">
+								<img src="images/home/fastTeslimat.svg" width="200px;"alt="" srcset="">
+							</div>
+							<div class="col">
+
+
+						<img src="images/home/kapidanIade.svg" width="200px;">
+
+							</div>
+							</div>
 							
-								<img src="images/home/30.png" style="width:200px; margin-left:150px;">
-								<img src="images/home/guzl.png" style="width:200px; margin-left:150px;">
-							<img src="images/home/fast.png" style=" width:200px; margin-left:150px;">
-						
-								
+</div>-->
+							</div>
+						</div>
+					</div>
+				
 							<HR>
 							
 							</div>
@@ -27,7 +43,7 @@
 			</div>
 		</div>
 		
-		<div id="foot" style="font-family: 'Josefin Sans', sans-serif; background-color:#BCEAD5; padding:50px; border-radius:100px; margin-top:50px;">
+		<div id="footer-global md-center text-center" style="font-family: 'Josefin Sans', sans-serif; margin-top: 100px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
@@ -85,7 +101,7 @@
 
 					
 					</div>
-							<!--<img src="images/home/bestpay.png" style="width:350px; user-select:none;">-->
+							
 						</div>
 					</div>
 					
@@ -94,8 +110,9 @@
 		</div>
 		
 		<div class="footer-bottom" style="background-color:#EFF5F5;margin-top:50px;">
+		<footer class="footer fluid md-center">
 			<div class="container">
-				<div class="row" align="center" ">
+				<div class="row" align="center">
 					
 					<p class="pull-left">Copyright © 2022 <b><img src="images/home/alt.png" style="width:150px; user-select:none;"></b>
 					<p class="pull-right"> <a href="http://www.60mts.com.tr" target="_blank"> <img src="images/home/alt-imza1.png" style="user-select:none; width:150px;" title="60MTS DİJİTAL WEB DESİGN">
@@ -119,6 +136,7 @@
   
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="bootstrap.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>

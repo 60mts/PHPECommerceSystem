@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.23 89.23">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #f39200;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        fill: #f39200;
+      }
+
+      .cls-4 {
+        fill: #e94e1b;
+        font-family: FranklinGothic-Heavy, 'Franklin Gothic Heavy';
+        font-size: 23px;
+        font-weight: 800;
+      }
+
+      .cls-5 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <circle class="cls-3" cx="44.62" cy="44.62" r="31.81"/>
+  <circle class="cls-2" cx="44.62" cy="44.62" r="41.62"/>
+  <text class="cls-4" transform="translate(18.66 40.52)"><tspan x="0" y="0">BE</tspan><tspan class="cls-6" x="28.18" y="0">S</tspan><tspan x="42.33" y="0">T </tspan><tspan x="0" y="27.6">Fİ</tspan><tspan class="cls-5" x="19.96" y="27.6">Y</tspan><tspan class="cls-1" x="32.43" y="27.6">A</tspan><tspan x="46.22" y="27.6">T</tspan></text>
+</svg>

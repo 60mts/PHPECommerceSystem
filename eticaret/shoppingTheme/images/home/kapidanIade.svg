@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.56 172.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ededed;
+        stroke: #e30613;
+        stroke-dasharray: 0 12;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #878787;
+      }
+
+      .cls-3 {
+        font-family: Acknowledgement, Acknowledgement;
+        font-size: 7px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #1d1d1b;
+      }
+
+      .cls-5 {
+        fill: #c6c6c6;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="82.78" cy="86.47" r="62.43"/>
+  <text class="cls-3" transform="translate(60.78 118.36)"><tspan x="0" y="0">kapıdan</tspan><tspan x="10.3" y="8.4">iade</tspan></text>
+  <g>
+    <polygon class="cls-2" points="79.27 107.09 49.27 91.51 48.14 55.07 79.27 60.73 79.27 107.09"/>
+    <polygon class="cls-5" points="117.42 97.11 80.64 108.09 80.64 61.36 117.42 56.51 117.42 97.11"/>
+    <polygon class="cls-4" points="80.13 59.5 50.02 54.2 82.31 47.75 116.91 54.65 80.13 59.5"/>
+  </g>
+</svg>

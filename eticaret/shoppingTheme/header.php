@@ -8,7 +8,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 <head>
 	<link href="index.css" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <title> .::BB::. BESTi BURADA</title>
@@ -82,7 +82,8 @@ include '../gentelella-master/gentelella-master/production/function.php';
 					</div>
                     <div class="col-sm-8" style="margin-top:20px; color:white;">
 						<div class="shop-menu pull-right">
-						<ul class="nav navbar-nav  d-flex" >
+						
+						<ul class="nav navbar-nav " >
 								<button type="button" class="btn btn-outline"style="margin-left:-200px; color:white;"> <a href="cart" style="color:orange;"><i class="bi bi-bag-fill ms-3 fs-22" style="font-size:30px;padding:10px "></i>
 							
 							<h4 style="float:right;">Sepetim</h4><br>
@@ -90,7 +91,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 							
 							</a></button>
 							</ul>
-							<ul class="nav navbar-nav d-flex">
+							<ul class="nav navbar-nav ">
 								<button type="button" class="btn btn-dark"  style="color:gray; "> <a href="login" style="color:orange;"><i class="bi bi-file-lock2" style="font-size:30px;"></i> <b>    </b></a></button>
 							</ul>
 						</div>
@@ -146,10 +147,7 @@ include '../gentelella-master/gentelella-master/production/function.php';
 						</div>
 					</div>
 					
-					<div class="col-sm-3" style="margin-top:15px;">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Ara"/>
-						</div>
+					
 					</div>
 				</div>
 			</div>
