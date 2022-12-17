@@ -28,7 +28,7 @@
               <input type="text" name="menuSira" placeholder="menu sira"required="" >
               
               <h5>MENU URL</h5>
-              <input type="text"  name="menuUrl" placeholder="menu URL">
+              <input type="text" disabled name="menuSeoUrl" placeholder="menu URL">
               <h5>MENU STATE</h5>
               <div class="container text-center d-flex items-align-center">
              <select  id="state" class="form-control" style="width:300px;" name="menuState" required>

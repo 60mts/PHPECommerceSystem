@@ -4,13 +4,9 @@ ob_start();
 
 session_start();
 
+    function seo($str, $options = array())
 
-
-
-
-function seo($str, $options = array())
-
-{
+        {
 
     $str = mb_convert_encoding((string)$str, 'UTF-8', mb_list_encodings());
 

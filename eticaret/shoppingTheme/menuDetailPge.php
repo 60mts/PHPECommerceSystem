@@ -1,13 +1,14 @@
-<?php include 'header.php'; 
+<?php include 'header.php'; ?>
+<?php
 
-        $menusor=$db->prepare("SELECT * FROM menu");
+        $menusor=$db->prepare("SELECT * FROM menu ");
         $menucek=$menusor->execute();
         
         $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
     
     ?>
 	
-    <hr style="width:75%;">
+    
 	<section>
 		<div class="container">
 			<div class="row">

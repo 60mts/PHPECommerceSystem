@@ -10,12 +10,13 @@
  if (isset($_POST['menuUpdate'])) {
                          
                          $menuID=$_POST['menuID'];
+                         $menuSeoUrl=seo($_POST['menuName']);
                      
                      $ayarkaydet=$db->prepare("UPDATE menu SET
                         menuID=:menuID, 
                           menuName=:menuName,
                           menuSira=:menuSira,
-                          menuUrl=:menuUrl,
+                          menuSeoUrl=:menuSeoUrl,
                           menuDetail=:menuDetail,
                           menuState=:menuState
                           where menuID={$_POST['menuID']}");
@@ -24,7 +25,7 @@
                         'menuID'=>$_POST['menuID'],
                       'menuName'=>$_POST['menuName'],
                       'menuSira'=> $_POST['menuSira'],
-                      'menuUrl'=>$_POST['menuUrl'],
+                      'menuSeoUrl'=>$menuSeoUrl,
                       'menuDetail'=>$_POST['menuDetail'],
                       'menuState'=>$_POST['menuState'],
                      

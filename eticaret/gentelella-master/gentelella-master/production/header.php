@@ -1,6 +1,6 @@
         <?php  
-        include_once '../funcFile/connect.php';
-
+        include '../funcFile/connect.php';
+        include 'function.php';
         $ayarsor=$db->prepare("SELECT *FROM ecommerce where settingID=:id");
         $ayarsor->execute(array(
         'id'=>0
@@ -8,7 +8,6 @@
 
         $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 
-        session_start();
         ob_start();
 ?>
 <?php
@@ -47,7 +46,7 @@ $usersor->execute();
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->

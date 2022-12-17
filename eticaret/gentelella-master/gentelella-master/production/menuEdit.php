@@ -14,7 +14,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
- <form action="../funcFile/userUpdateIslem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+ <form action="../funcFile/menUpdateIslem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
 
 
@@ -32,14 +32,16 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
             
               
               <h5>MENU NAME</h5>
-              <input type="text" name="menuName" value=" <?php echo seo ($menucek['menuName'])?>" required="">
-                <h5>MENU DETAİL</h5>
-              <input type="text" name="menuDetail" value="<?php echo $menucek['menuDetail'];  ?>" required="">
+              <input type="text" name="menuName" value=" <?php echo $menucek['menuName']?>" required="">
               <h5>MENU SİRA</h5>
               <input type="text" name="menuSira" value="<?php echo $menucek['menuSira']; ?>" required="" >
+                <h5>MENU URL</h5>
+              <input type="text" disabled  name="menuSeoUrl" value="<?php  echo $_SERVER['HTTP_HOST'] ?> <?php seo($menucek['menuSeoUrl']); ?>" >
+                <h5>MENU DETAİL</h5>
+              <input type="text" name="menuDetail" value="<?php echo $menucek['menuDetail'];  ?>" required="">
+            
               
-              <h5>MENU URL</h5>
-              <input type="text"  name="menuUrl" value="<?php echo $menucek['menuUrl']; ?>" >
+              
               <h5>MENU STATE</h5>
               <div class="container text-center d-flex items-align-center">
              <select  id="state" class="form-control" style="width:300px;" name="menuState" required>
@@ -52,7 +54,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
          </div>
        </div>
        <hr>
-                  <button type="submit" formaction="../funcFile/islem.php" role="button"class="btn btn-success" name="menuUpdate" > Update </button>
+                  <button type="submit" name="mUpdate"  > Update </button>
 
     
             

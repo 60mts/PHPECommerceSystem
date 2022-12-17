@@ -1,22 +1,22 @@
 <?php 
  include 'connect.php';
- session_start();
+
  ob_start();
  include '../production/function.php';
 
 
 
-$menucek=$menusor->fetch(PDO::FETCH_ASSOC);
+
 
  if(isset($_POST['menuAdd']))
  {
-   $menuSeoUrl=seo('menuName');
+   $menuSeoUrl=seo($_POST['menuName']);
 
    $update=$ayarkaydet=$db->prepare("INSERT INTO menu SET
 
                menuName=:menuName,
                menuDetail=:menuDetail,
-               menuUrl=:menuUrl,
+            
                menuSeoUrl=:menuSeoUrl,
                menuSira=:menuSira,
                menuState=:menuState"
@@ -25,8 +25,7 @@ $menucek=$menusor->fetch(PDO::FETCH_ASSOC);
 
        'menuName'=>$_POST['menuName'],
        'menuDetail'=> $_POST['menuDetail'],
-       'menuUrl'=> $_POST['menuUrl'],
-       'menuSeoUrl'=>'menuSeoUrl',
+       'menuSeoUrl'=>$menuSeoUrl,
        'menuSira'=> $_POST['menuSira'],
        'menuState'=>$_POST['menuState']
 

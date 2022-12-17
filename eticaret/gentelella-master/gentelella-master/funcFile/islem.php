@@ -2,6 +2,7 @@
     include 'connect.php';
     
     include '../production/function.php';
+    
    session_start();
     ob_start();
 
@@ -349,7 +350,7 @@ $update=$ayarkaydet->execute(array(
  }
                           if(isset($_POST['menuAdd']))
                           {
-                            $menuSeoUrl=seo('menuName');
+                            $menuSeoUrl=seo($_POST['menuName']);
 
                             $ayarkaydet=$db->prepare("INSERT INTO menu SET
 
@@ -365,7 +366,7 @@ $update=$ayarkaydet->execute(array(
                                 'menuName'=>$_POST['menuName'],
                                 'menuDetail'=> $_POST['menuDetail'],
                                 'menuUrl'=> $_POST['menuUrl'],
-                                'menuSeoUrl'=>'menuSeoUrl',
+                                'menuSeoUrl'=>$menuSeoUrl,
                                 'menuSira'=> $_POST['menuSira'],
                                 'menuState'=>$_POST['menuState']
 
@@ -384,7 +385,7 @@ $update=$ayarkaydet->execute(array(
 
                           }
                                       
-                          if (isset($_POST['menuUpdate'])) {
+                          if (isset($_POST['mUpdate'])) {
                          
                             $menuID=$_POST['menuID'];
                         
@@ -392,7 +393,7 @@ $update=$ayarkaydet->execute(array(
                            menuID=:menuID, 
                              menuName=:menuName,
                              menuSira=:menuSira,
-                             menuUrl=:menuUrl,
+                             menuSeoUrl=:menuSeoUrl,
                              menuDetail=:menuDetail,
                              menuState=:menuState
                              where menuID={$_POST['menuID']}");
@@ -401,9 +402,9 @@ $update=$ayarkaydet->execute(array(
                            'menuID'=>$_POST['menuID'],
                          'menuName'=>$_POST['menuName'],
                          'menuSira'=> $_POST['menuSira'],
-                         'menuUrl'=>$_POST['menuUrl'],
+                         'menuSeoUrl'=>$_POST['menuSeoUrl'],
                          'menuDetail'=>$_POST['menuDetail'],
-                         'menuState'=>$_POST['menuState'],
+                         'menuState'=>$_POST['menuState']
                         
                     
                         ));
