@@ -1,0 +1,26 @@
+<!--<?php  $menusor=$db->prepare("SELECT * FROM menu where menuState=:durum order by menuSira ASC limit 5");
+									$menusor->execute(array(
+										'durum' => 1
+
+									));
+									while ($menucek=$menusor->fetch(PDO::FETCH_ASSOC)) {
+										?>
+										
+											<li> <b><a href="
+											<?php
+											if(!empty($menucek['menuUrl'])){
+
+												echo $menucek['menuUrl'];
+
+											}
+											else{
+
+												echo "sayfa-".seo($menucek['menuName']);
+											}
+											
+												?>
+											
+											"><?php echo $menucek['menuName']; ?> </b></li></a>
+                                
+									<?php } ?>
+							

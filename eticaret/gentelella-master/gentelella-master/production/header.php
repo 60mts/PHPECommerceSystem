@@ -93,7 +93,7 @@ $usersor->execute();
               <div class="profile_info" >
                 <br>
                 <a href="profile">
-                <button type="button" class="btn btn-light" style="border:none;font-size:10px; margin-left:-30px; margin-top:-25px;"><i class="fa fa-edit"></i> Profili Düzenle</button>
+                <button type="button" class="btn btn-light" style="border:none;font-size:10px; margin-left:-30px; margin-top:-25px;"><i class="fa fa-edit"></i> Profile Edit</button>
                 </a>
               </div>
                 <span>Welcome</span>
@@ -112,26 +112,30 @@ $usersor->execute();
               <div class="menu_section">
                
                 <ul class="nav side-menu">
-                  <li><a href="index"><i class="fa fa-home"></i> Anasayfa </a>
+                  <li><a href="index"><i class="fa fa-home"></i> Home </a>
                   </li>
-                    <li><a href="userInfo"><i class="fa fa-user"></i> Kullanıcı İşlemleri </a>
-                  </li>
-                   </li>
-                    <li><a href="menuS"><i class="fa fa-list"></i> Menu İşlemleri </a>
-                  </li>
+                  
                   <ul class="nav side-menu">
-                  <li><a><i class="fa fa-cogs"></i> Site Ayarları <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-cogs"></i> Site Settings <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="genel-settings">Genel ayarlar</a></li>
-                      <li><a href="iletisimSettings">İletişim ayarları</a></li>
+                      <li><a href="allGeneralSettings">All Settings</a></li>
+                      <li><a href="iletisimSettings">Contact Settings</a></li>
                       <li><a href="settingApi">Api Ayarlar</a></li>
-                          <li><a href="socialSetting">Sosyal Ayarlar </a></li>
-                          <li><a href="mailSetting">Mail Ayarlar </a></li>
+                          <li><a href="socialSetting">Social Settings </a></li>
+                          <li><a href="mailSetting">Mail Settings </a></li>
                           <li><a href="hakkimzdaSetting">Hakkımzda Ayarlar </a></li>
 
 
 
                     </ul>
+                  </li>
+                  <li><a href="userInfo"><i class="fa fa-user"></i>  User  </a>
+                  </li>
+                   </li>
+                    <li><a href="menuS"><i class="fa fa-list"></i> Menu  </a>
+                  </li>
+                  </li>
+                    <li><a href="sliderP"><i class="fa fa-list"></i> Slider Settings  </a>
                   </li>
               </div>
             </div>
@@ -174,7 +178,7 @@ $usersor->execute();
                     <i class="fa fa-face-smile"> </i></a></li>
                   
                     <li><a href="Help">Help <i class="fa fa-question"> </i></a> </li>
-                    <li><a href="logout"> Güvenli Çıkış <i class="fa fa-person-to-door"></i> </a></li>
+                    <li><a href="logout"> Security Exit <i class="fa fa-person-to-door"></i> </a></li>
                   </ul>
                 </li>
                 <li role="presentation" class="dropdown">

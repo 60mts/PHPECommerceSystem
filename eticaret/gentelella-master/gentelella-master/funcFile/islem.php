@@ -3,10 +3,13 @@
     
     include '../production/function.php';
     
-   session_start();
+    
     ob_start();
 
-        $usersor=$db->prepare("SELECT * FROM user where userName=:longName and userPhoto=:uphoto");
+
+
+
+$usersor=$db->prepare("SELECT * FROM user where userName=:longName and userPhoto=:uphoto");
         $usersor->execute(array(
 
       'longName' => $_SESSION['userName'],
@@ -418,6 +421,48 @@ $update=$ayarkaydet->execute(array(
                                  Header("Location:../production/menuEdit.php?menuID=$menuID&durum=no");
                     
                          }
+
+
+                     
+                    
+                     if (isset($_POST['sliderUpdate'])) {
+                                             
+                                             $sliDerID=$_POST['sliderID'];
+                                        
+                                         
+                                         $ayarkaydet=$db->prepare("UPDATE slider SET
+                                            sliderID=:sliderID, 
+                                              slierName=:sliderName,
+                                              sliderOrder=:sliderOrder,
+                                              sliderLink=:sliderLink,
+                                              sliderImageLine=:sliderImageLine,
+                                              sliderState=:sliderState
+                                              where sliderID={$_POST['sliderID']}");
+                                         
+                                         $update=$ayarkaydet->execute(array(
+                                            'sliderID'=>$_POST['sliderID'],
+                                          'sliderName'=>$_POST['sliderName'],
+                                          'sliderOrder'=> $_POST['sliderOrder'],
+                                          'sliderLink'=>$_POST['sliderLink'],
+                                          'sliderImageLine'=>$_POST['sliderImageLine'],
+                                          'sliderState'=>$_POST['sliderState'],
+                                         
+                                     
+                                         ));
+                                     }
+                                          if ($update) {
+                                              
+                                              Header("Location:../production/sliderEdit.php?sliderID=$sliderID&durum=ok");
+                                     
+                                     
+                                              } else{
+                                                  Header("Location:../production/sliderEdit.php?sliderID=$sliderID&durum=no");
+                                     
+                                          }
+                    
+                                          ?>
+
+
    
                         
   ?>
